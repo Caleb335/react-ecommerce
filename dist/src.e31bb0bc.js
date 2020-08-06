@@ -28300,7 +28300,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function App() {
   return _react.default.createElement("div", {
     className: "app__base"
-  }, _react.default.createElement("h1", null, "Welcome Here!  \uD83D\uDE0D "));
+  }, _react.default.createElement("h1", null, "Welcome Here! \uD83D\uDE0D "));
 }
 },{"react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
@@ -28387,7 +28387,7 @@ require("./scss/app.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render(_react.default.createElement(_App.default, null), document.querySelector("#root"));
+_reactDom.default.render(_react.default.createElement(_App.default, null), document.querySelector('#root'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/App":"components/App.js","./scss/app.scss":"scss/app.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -28416,7 +28416,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45535" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49269" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
