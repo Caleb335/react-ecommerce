@@ -30823,11 +30823,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function App() {
   return _react.default.createElement("div", {
     className: "app__base"
-<<<<<<< HEAD
-  }, _react.default.createElement("h1", null, "Welcome Here! \uD83D\uDE0D "));
-=======
-  }, _react.default.createElement(_LandingPage.default, null));
->>>>>>> a9584b007cafdf7147f23299e9de2c7d54ab783c
+  }, _react.default.createElement(_LandingPage.default, null), _react.default.createElement(_Product_page.default, {
+    Images: _Images.default
+  }));
 }
 },{"react":"../node_modules/react/index.js","./Product_page":"components/Product_page.js","./Landing-page":"components/Landing-page.js","./Images":"components/Images.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
@@ -30943,11 +30941,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-<<<<<<< HEAD
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49269" + '/');
-=======
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38675" + '/');
->>>>>>> a9584b007cafdf7147f23299e9de2c7d54ab783c
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49617" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
