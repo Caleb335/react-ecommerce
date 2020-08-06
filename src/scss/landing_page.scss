@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Pathway+Gothic+One&display=swap');
+
+header{
+  // padding:0px 0px 80px 0px;
+  background-image: url('../../assets/img/cakes/other/heather-barnes-_TN1m5R1pFI-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header nav  h1{
+  font-family: 'Courgette', cursive;
+}
+header h1{
+  font-family: cursive;
+}
+
+header nav{
+  padding: 20px;
+}
+
+header ul li{
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+}
+
+header .cart{
+  font-size: 20px;
+}
+
+.header-content{
+  margin-top: 120px;
+  color: #888888;
+  padding: 15px;
+}
+.header-content p{
+  line-height: 1.9rem;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 60px;
+  font-family: 'Courgette', cursive;
+}
+
+/*=====LANDING PAGE(contact section)========*/
+.contact-section{
+  // background-color: rgb(186, 213, 226);
+  margin-top: 50px;
+}
+.contact-section .left{
+  background-image: url('../../assets/img/cakes/other/velizar-ivanov-rXB9YjOQX8I-unsplash.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 90px;
+}
+.contact-section .right{
+  padding: 100px;
+}
+.contact-section form{
+  padding: 20px;
+}
+.contact-section h2{
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #3b3a3a;
+}
+input,textarea,button{
+  margin-top: 10px;
+  border: 1px solid #3b3b3b;
+  padding: 5px;
+  border-radius: 6px;
+  color: #3b3b3b;
+  outline: none;
+}
+.title{
+  margin-left: 90px;
+  border-bottom: 5px solid steelblue;
+  width: 35px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+/*===========Landing Page(featured section)============*/
+.featured-section{
+  padding: 20px 0px 30px 0px;
+}
+.featured-section .category{
+  display: flex;
+}
+.featured-section .category-img{
+  display: flex;
+  flex-wrap: wrap;
+}
+.featured-section .category-img img{
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+}
+.featured-section .category button{
+  margin: 0px 20px 0px 20px;
+  border-radius: 20px;
+  background-color: white;
+  color: #555454;
+  border: 1px solid grey;
+  width: auto;
+  outline: none;
+
+}
+.featured-section .category button img{
+  margin-right: 3px;
+}
+.featured-section .featured-cake{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  height: 290px;
+}
+.featured-section .featured-cake:hover{
+  opacity: 0.7;
+}
+.featured-section .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+  .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+/*===========Landing Page(footer section)=============*/
+footer{
+  // margin-top: 90px;
+  padding: 0px 0px 80px 0px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  background-image: url('../../assets/img/background.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer h1{
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  margin-bottom: 60px;
+  padding-top: 25px;
+}
+footer ul{
+  margin-left: 150px;
+}
+footer li{
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: 20px;
+}
+.footer-links{
+  display: flex;
+}
+footer .social-media{
+  margin: auto;
+}
