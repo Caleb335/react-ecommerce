@@ -28285,7 +28285,211 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"components/App.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"../node_modules/react-dom/cjs/react-dom.development.js"}],"../assets/img/cakes/birthday/birthday.jpg":[function(require,module,exports) {
+module.exports = "/birthday.4fce173c.jpg";
+},{}],"../assets/img/cakes/birthday/birthday1.jpg":[function(require,module,exports) {
+module.exports = "/birthday1.2082edc8.jpg";
+},{}],"../assets/img/cakes/birthday/birthday2.jpg":[function(require,module,exports) {
+module.exports = "/birthday2.e358c31a.jpg";
+},{}],"../assets/img/cakes/birthday/birthday3.jpg":[function(require,module,exports) {
+module.exports = "/birthday3.41982917.jpg";
+},{}],"../assets/img/cakes/birthday/birthday4.jpg":[function(require,module,exports) {
+module.exports = "/birthday4.fe2b9722.jpg";
+},{}],"../assets/img/cakes/birthday/birthday5.jpg":[function(require,module,exports) {
+module.exports = "/birthday5.733e317f.jpg";
+},{}],"../assets/img/cakes/cup/cup.jpg":[function(require,module,exports) {
+module.exports = "/cup.39370689.jpg";
+},{}],"../assets/img/cakes/cup/cup1.jpg":[function(require,module,exports) {
+module.exports = "/cup1.13299e2a.jpg";
+},{}],"../assets/img/cakes/cup/cup2.jpg":[function(require,module,exports) {
+module.exports = "/cup2.4ecb9088.jpg";
+},{}],"../assets/img/cakes/cup/cup3.jpg":[function(require,module,exports) {
+module.exports = "/cup3.1cc16c85.jpg";
+},{}],"../assets/img/cakes/cup/cup4.jpg":[function(require,module,exports) {
+module.exports = "/cup4.f7ae3afb.jpg";
+},{}],"components/Product_page.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = ProductPage;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _birthday = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday.jpg"));
+
+var _birthday2 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday1.jpg"));
+
+var _birthday3 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday2.jpg"));
+
+var _birthday4 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday3.jpg"));
+
+var _birthday5 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday4.jpg"));
+
+var _birthday6 = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday5.jpg"));
+
+var _cup = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup.jpg"));
+
+var _cup2 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup1.jpg"));
+
+var _cup3 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup2.jpg"));
+
+var _cup4 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup3.jpg"));
+
+var _cup5 = _interopRequireDefault(require("./../../assets/img/cakes/cup/cup4.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//Importing Images
+function ProductPage(_ref) {
+  var Images = _ref.Images;
+  return _react.default.createElement("div", {
+    className: "product_page"
+  }, _react.default.createElement("header", null, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Logo")), _react.default.createElement("input", {
+    type: "text",
+    placeholder: "Search for a cake.."
+  }), _react.default.createElement("div", null, _react.default.createElement("li", null, "Contacts"), _react.default.createElement("li", null, "Help"))), _react.default.createElement("div", {
+    className: "banner"
+  }, _react.default.createElement("img", {
+    src: "",
+    alt: ""
+  }), _react.default.createElement("div", null, _react.default.createElement("p", null, "The Best Cakes in Every Category"), _react.default.createElement("input", {
+    type: "text",
+    placeholder: "Search for a cake..."
+  }))), _react.default.createElement("div", {
+    className: "image-gallery"
+  }, _react.default.createElement("div", {
+    className: "birthday"
+  }, _react.default.createElement("h2", null, "Birthday"), _react.default.createElement("img", {
+    src: _birthday.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _birthday2.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _birthday3.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _birthday4.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _birthday5.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _birthday6.default,
+    alt: ""
+  })), _react.default.createElement("div", {
+    className: "cupcakes"
+  }, _react.default.createElement("img", {
+    src: _cup.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _cup2.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _cup3.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _cup4.default,
+    alt: ""
+  }), _react.default.createElement("img", {
+    src: _cup5.default,
+    alt: ""
+  })), _react.default.createElement("div", null)));
+} // {
+//   Images[0].map(image => (
+//     <img key={image.id} src={image.src} style={{
+//           width:'400px'
+//         }}/>
+//   ))
+// }
+// {
+//   Images[1].map(image => (
+//     <img key={image.id} src={image.src} style={{
+//           width:'400px'
+//         }}/>
+//   ))
+// }
+},{"react":"../node_modules/react/index.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","./../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","./../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","./../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","./../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","./../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","./../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","./../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","./../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","./../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","./../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg"}],"components/Images.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _birthday = _interopRequireDefault(require("./../../assets/img/cakes/birthday/birthday.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import birthday1 from './../../assets/img/cakes/birthday/birthday1.jpg';
+// import birthday2 from './../../assets/img/cakes/birthday/birthday2.jpg';
+// import birthday3 from './../../assets/img/cakes/birthday/birthday3.jpg';
+// import birthday4 from './../../assets/img/cakes/birthday/birthday4.jpg';
+var Images = [[{
+  id: 1,
+  src: './../../assets/img/cakes/birthday/birthday.jpg'
+}, {
+  id: 2,
+  src: './../../assets/img/cakes/birthday/birthday2.jpg'
+}, {
+  id: 3,
+  src: './../../assets/img/cakes/birthday/birthday3.jpg'
+}, {
+  id: 4,
+  src: './../../assets/img/cakes/birthday/birthday4.jpg'
+}, {
+  id: 5,
+  src: './../../assets/img/cakes/birthday/birthday5.jpg'
+}], [{
+  id: 1,
+  src: './../../assets/img/cakes/cup/cup.jpg'
+}, {
+  id: 2,
+  src: './../../assets/img/cakes/cup/cup1.jpg'
+}, {
+  id: 3,
+  src: './../../assets/img/cakes/cup/cup3.jpg'
+}, {
+  id: 4,
+  src: './../../assets/img/cakes/cup/cup4.jpg'
+}], [{
+  id: 1,
+  src: './../../assets/img/cakes/other/other.jpg'
+}, {
+  id: 2,
+  src: './../../assets/img/cakes/other/other2.jpg'
+}, {
+  id: 3,
+  src: './../../assets/img/cakes/other/other3.jpg'
+}, {
+  id: 4,
+  src: './../../assets/img/cakes/other/other4.jpg'
+}], [{
+  id: 1,
+  src: './../../assets/img/cakes/wedding/wedding.jpg'
+}, {
+  id: 2,
+  src: './../../assets/img/cakes/wedding/wedding2.jpg'
+}, {
+  id: 3,
+  src: './../../assets/img/cakes/wedding/wedding3.jpg'
+}, {
+  id: 4,
+  src: './../../assets/img/cakes/wedding/wedding4.jpg'
+}, {
+  id: 5,
+  src: './../../assets/img/cakes/wedding/wedding5.jpg'
+}, {
+  id: 6,
+  src: './../../assets/img/cakes/wedding/wedding6.jpg'
+}]];
+var _default = Images;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js","./../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg"}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28295,14 +28499,20 @@ exports.default = App;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _Product_page = _interopRequireDefault(require("./Product_page"));
+
+var _Images = _interopRequireDefault(require("./Images"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
   return _react.default.createElement("div", {
     className: "app__base"
-  }, _react.default.createElement("h1", null, "Welcome Here!  \uD83D\uDE0D "));
+  }, _react.default.createElement("h1", null, "Welcome Here! \uD83D\uDE0D "), _react.default.createElement(_Product_page.default, {
+    Images: _Images.default
+  }));
 }
-},{"react":"../node_modules/react/index.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Product_page":"components/Product_page.js","./Images":"components/Images.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28387,7 +28597,7 @@ require("./scss/app.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom.default.render(_react.default.createElement(_App.default, null), document.querySelector("#root"));
+_reactDom.default.render(_react.default.createElement(_App.default, null), document.querySelector('#root'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./components/App":"components/App.js","./scss/app.scss":"scss/app.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -28416,7 +28626,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45535" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50139" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
