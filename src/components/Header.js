@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import flat from '../../assets/img/flat-cake.jpg';
 
@@ -18,7 +19,7 @@ export default function Header() {
               <a href="#">Contact</a>
             </li>
             <li className="nav-item">
-              <a href="#">Products</a>
+              <Link to="products">Products</Link>
             </li>
             <li className="nav-item">
               <a href="#">Sign in</a>

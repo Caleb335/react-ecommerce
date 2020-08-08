@@ -14,6 +14,7 @@ import cup2 from './../../assets/img/cakes/cup/cup2.jpg';
 import cup3 from './../../assets/img/cakes/cup/cup3.jpg';
 import cup4 from './../../assets/img/cakes/cup/cup4.jpg';
 
+import '../scss/product_page.scss';
 export default function ProductPage({ Images }) {
   return (
     <div className="product_page">
