@@ -28514,7 +28514,99 @@ function Landing() {
     className: "landing-body"
   }, _react.default.createElement("h3", null, "Body")), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js"}],"components/Images.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Header":"components/Header.js","./Footer":"components/Footer.js"}],"components/Login.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Login;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Login() {
+  return _react.default.createElement("div", {
+    className: "Register"
+  }, _react.default.createElement("div", {
+    className: "Register-image-prop Login-image"
+  }, _react.default.createElement("div", {
+    className: "Register-image-overlay"
+  }, _react.default.createElement("p", null, _react.default.createElement("em", null, "\"Happiness is cakes, cupcakes and more cakes\" - Anon")))), _react.default.createElement("div", {
+    className: "Register-form-lyt"
+  }, _react.default.createElement("div", {
+    className: "Register-form"
+  }, _react.default.createElement("h3", {
+    className: "Register-heading"
+  }, "Sign In"), _react.default.createElement("h5", {
+    className: "Register-subtext"
+  }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement("form", {
+    className: "Reg-form Login-form"
+  }, _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "email",
+    placeholder: "Email Address",
+    className: "input-full"
+  }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "password",
+    placeholder: "Password",
+    className: "input-full"
+  }))), _react.default.createElement("button", {
+    className: "Register-btn"
+  }, "Login")))));
+}
+},{"react":"../node_modules/react/index.js"}],"components/Register.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = Register;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Register() {
+  return _react.default.createElement("div", {
+    className: "Register"
+  }, _react.default.createElement("div", {
+    className: "Register-image-prop Register-image"
+  }, _react.default.createElement("div", {
+    className: "Register-image-overlay"
+  }, _react.default.createElement("p", null, _react.default.createElement("em", null, "\"Life's too short to say no to cake\" - Anon")))), _react.default.createElement("div", {
+    className: "Register-form-lyt"
+  }, _react.default.createElement("div", {
+    className: "Register-form"
+  }, _react.default.createElement("h3", {
+    className: "Register-heading"
+  }, "Create an account with us"), _react.default.createElement("h5", {
+    className: "Register-subtext"
+  }, "Already registered? ", _react.default.createElement("span", null, "Sign in")), _react.default.createElement("form", {
+    className: "Reg-form Reg-form-h"
+  }, _react.default.createElement("div", {
+    className: "flex flex-btw"
+  }, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "text",
+    placeholder: "First Name",
+    className: "input-half"
+  })), _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "text",
+    placeholder: "Last Name",
+    className: "input-half"
+  }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "email",
+    placeholder: "Email Address",
+    className: "input-full"
+  }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+    type: "password",
+    placeholder: "Password",
+    className: "input-full"
+  }))), _react.default.createElement("button", {
+    className: "Register-btn"
+  }, "Register")))));
+}
+},{"react":"../node_modules/react/index.js"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28606,6 +28698,10 @@ var _Product_page = _interopRequireDefault(require("./Product_page"));
 
 var _LandingPage = _interopRequireDefault(require("./Landing-page"));
 
+var _Login = _interopRequireDefault(require("./Login"));
+
+var _Register = _interopRequireDefault(require("./Register"));
+
 var _Images = _interopRequireDefault(require("./Images"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -28613,9 +28709,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function App() {
   return _react.default.createElement("div", {
     className: "app__base"
-  }, _react.default.createElement(_LandingPage.default, null));
+  }, _react.default.createElement(_LandingPage.default, null), _react.default.createElement(_Login.default, null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement(_Register.default, null));
 }
-},{"react":"../node_modules/react/index.js","./Product_page":"components/Product_page.js","./Landing-page":"components/Landing-page.js","./Images":"components/Images.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./Product_page":"components/Product_page.js","./Landing-page":"components/Landing-page.js","./Login":"components/Login.js","./Register":"components/Register.js","./Images":"components/Images.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28687,7 +28783,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../assets/img/flat-cake.jpg":[["flat-cake.5edfd24e.jpg","../assets/img/flat-cake.jpg"],"../assets/img/flat-cake.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
+},{"./..\\..\\assets\\img\\flat-cake.jpg":[["flat-cake.5edfd24e.jpg","../assets/img/flat-cake.jpg"],"../assets/img/flat-cake.jpg"],"./..\\..\\assets\\img\\cakes\\cup\\cup.jpg":[["cup.39370689.jpg","../assets/img/cakes/cup/cup.jpg"],"../assets/img/cakes/cup/cup.jpg"],"./..\\..\\assets\\img\\cakes\\cup\\cup2.jpg":[["cup2.4ecb9088.jpg","../assets/img/cakes/cup/cup2.jpg"],"../assets/img/cakes/cup/cup2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32200,7 +32296,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39773" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60262" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

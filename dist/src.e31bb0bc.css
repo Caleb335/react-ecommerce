@@ -8,6 +8,18 @@
 .app__base {
   min-height: 100vh; }
 
+button {
+  box-shadow: 0 0 10px transparent;
+  transition: box-shadow .3s ease-in-out; }
+  button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); }
+
+.flex {
+  display: flex; }
+
+.flex-btw {
+  justify-content: space-between; }
+
 .header__base {
   height: 680px;
   background: #b3e4f9; }
@@ -259,6 +271,94 @@ button {
 ::-webkit-scrollbar-thumb {
   background: #FF0066;
   border-radius: 5px; }
+
+.Register {
+  display: flex;
+  height: 660px; }
+  .Register .Register-image-prop {
+    width: 50%;
+    height: 100%;
+    position: relative; }
+  .Register .Register-image {
+    background: url("/cup.39370689.jpg") center no-repeat;
+    background-size: cover; }
+  .Register .Login-image {
+    background: url("/cup2.4ecb9088.jpg") center no-repeat;
+    background-size: cover; }
+  .Register .Register-image-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    padding-bottom: 23px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3; }
+    .Register .Register-image-overlay p {
+      z-index: 88;
+      color: #fff;
+      font-size: 23px;
+      font-weight: 500;
+      text-align: center; }
+  .Register .Register-form-lyt {
+    width: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .Register .Register-form {
+    width: 520px; }
+    .Register .Register-form .Register-heading {
+      font-size: 28px;
+      font-weight: 500;
+      color: #9bc7fb; }
+    .Register .Register-form .Register-subtext {
+      font-size: 16px;
+      font-weight: normal;
+      color: #6A7E8A;
+      margin-top: 8px; }
+      .Register .Register-form .Register-subtext span {
+        color: #9bc7fb; }
+    .Register .Register-form .Login-form {
+      height: 250px; }
+    .Register .Register-form .Reg-form-h {
+      height: 320px; }
+    .Register .Register-form .Reg-form {
+      background: #fff;
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 28px;
+      padding: 15px 28px;
+      box-shadow: 0px 20px 50px #EAEEE9; }
+      .Register .Register-form .Reg-form .input-half {
+        width: 220px; }
+      .Register .Register-form .Reg-form .input-full {
+        width: 100%; }
+      .Register .Register-form .Reg-form input {
+        height: 40px;
+        border-radius: 4px;
+        text-indent: 8px;
+        margin-top: 30px;
+        border: 1px solid #6a7e8a;
+        transition: all .3s ease-in-out; }
+        .Register .Register-form .Reg-form input:focus {
+          border-color: #9bc7fb;
+          border-width: 1.5px; }
+      .Register .Register-form .Reg-form .Register-btn {
+        margin-top: 32px;
+        background: #FF0066;
+        color: #fff;
+        width: 150px;
+        height: 35px;
+        line-height: 14px;
+        font-size: 16px;
+        border-radius: 5px;
+        float: right;
+        border: none;
+        cursor: pointer; }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

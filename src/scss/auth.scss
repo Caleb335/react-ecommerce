@@ -1,0 +1,127 @@
+.Register{
+    display: flex;
+    height:660px;
+
+    & .Register-image-prop{
+        width: 50%;
+        height: 100%;
+        position: relative; 
+
+    }
+
+    .Register-image{
+        background: url('../../assets/img/cakes/cup/cup.jpg') center no-repeat;
+        background-size: cover; 
+    }  
+
+    .Login-image{
+        background: url('../../assets/img/cakes/cup/cup2.jpg') center no-repeat;
+        background-size: cover; 
+    }  
+
+    .Register-image-overlay{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+        padding-bottom: 23px;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 3;
+
+        p{
+            z-index: 88;
+            color: #fff;
+            font-size: 23px;
+            font-weight: 500;
+            text-align: center;
+        }  
+    }
+
+    .Register-form-lyt{
+        width: 50%;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Register-form{
+        width: 520px;
+
+        .Register-heading{
+            font-size: 28px;
+            font-weight: 500;
+            color: $primary;
+
+            
+        }
+
+        .Register-subtext{
+            font-size: 16px;
+            font-weight: normal;
+            color: #6A7E8A;
+            margin-top: 8px;
+
+            span{
+                color: $primary;
+            }
+        }
+
+        .Login-form{
+            height: 250px;
+        }
+
+        .Reg-form-h{
+            height: 320px;
+        }
+
+        .Reg-form{
+            background: #fff;
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 28px;
+            padding: 15px 28px;
+            box-shadow: 0px 20px 50px #EAEEE9;
+
+            .input-half{
+                width: 220px;
+            }
+
+            .input-full{
+                width: 100%;
+            }
+
+            input{
+                height: 40px;
+                border-radius: 4px;
+                text-indent: 8px;
+                margin-top: 30px;
+                border: 1px solid #6a7e8a;
+                transition: all .3s ease-in-out;
+
+                &:focus{
+                    border-color: $primary;
+                    border-width: 1.5px;
+                }
+            }
+
+            .Register-btn{
+                margin-top: 32px;
+                background: $pinkish;
+                color: #fff;
+                width: 150px;
+                height: 35px;
+                line-height: 14px;
+                font-size: 16px;
+                border-radius: 5px;
+                float: right;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}

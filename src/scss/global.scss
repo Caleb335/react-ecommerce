@@ -13,6 +13,24 @@
   min-height: 100vh;
 }
 
+button{
+  box-shadow: 0 0 10px transparent;
+  transition: box-shadow .3s ease-in-out;
+
+  &:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)
+  }
+}
+
+
+.flex{
+  display: flex;
+}
+
+.flex-btw{
+  justify-content: space-between;
+}
+
 // header section starts here
 .header__base {
   height: 680px;
