@@ -8,6 +8,8 @@ import birthday2 from '../../assets/img/cakes/birthday/birthday2.jpg';
 import birthday3 from '../../assets/img/cakes/birthday/birthday3.jpg';
 import birthday4 from '../../assets/img/cakes/birthday/birthday4.jpg';
 import birthday5 from '../../assets/img/cakes/birthday/birthday5.jpg';
+import flat from '../../assets/img/flat-cake.jpg';
+
 
 import cup from '../../assets/img/cakes/cup/cup.jpg';
 import cup1 from '../../assets/img/cakes/cup/cup1.jpg';
@@ -21,7 +23,25 @@ import other1 from '../../assets/img/other1.jpg'
 export default function Landing() {
   return (
     <div className="landing">
-      <Header /> 
+      <div className="header-intro">
+        <div className="text-cta">
+          <h2 className="text-intro">
+            Find out the sweet story behind our Mastery.
+          </h2>
+          <p className="more-intro">
+            Everything we offer is made right here, from cookies to pasteries to
+            cakes. Name them, we've got you covered.
+          </p>
+        </div>
+        <div className="image-cta">
+          <img
+            src={flat}
+            className="img-intro"
+            alt="an image showing a very flat cake"
+          />
+        </div>
+      </div>
+
       {/* landing body */}
       <div className="landing-body">
         <div className="call-to-action">
@@ -115,7 +135,6 @@ export default function Landing() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

@@ -47,7 +47,6 @@ img {
   min-height: 100vh; }
 
 .header__base {
-  height: 680px;
   background: #b3e4f9; }
 
 header {
@@ -83,7 +82,8 @@ nav ul li a {
 
 .header-intro {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background: #b3e4f9; }
 
 .text-cta {
   width: 550px;

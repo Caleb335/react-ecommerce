@@ -15,7 +15,6 @@
 
 // header section starts here
 .header__base {
-  height: 680px;
   background: $bg-primary;
 }
 
@@ -62,6 +61,7 @@ nav ul li a {
 .header-intro {
   display: flex;
   justify-content: space-around;
+  background: $bg-primary;
 }
 
 .text-cta {
