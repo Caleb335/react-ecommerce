@@ -32960,7 +32960,23 @@ var Register = /*#__PURE__*/function (_Component) {
 
 var _default = Register;
 exports.default = _default;
+<<<<<<< HEAD
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../components/Form":"components/Form.js","../components/FormInput":"components/FormInput.js","../components/Button":"components/Button.js"}],"pages/Aboutus-page.js":[function(require,module,exports) {
+=======
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../assets/img/other.jpg":[function(require,module,exports) {
+module.exports = "/other.b33c2b8b.jpg";
+},{}],"../assets/img/other3.jpg":[function(require,module,exports) {
+module.exports = "/other3.dee78b88.jpg";
+},{}],"../assets/img/other4.jpg":[function(require,module,exports) {
+module.exports = "/other4.d905635a.jpg";
+},{}],"../assets/img/staff1.jpeg":[function(require,module,exports) {
+module.exports = "/staff1.448589eb.jpeg";
+},{}],"../assets/img/staff2.jpeg":[function(require,module,exports) {
+module.exports = "/staff2.8ac48fbf.jpeg";
+},{}],"../assets/img/staff3.jpeg":[function(require,module,exports) {
+module.exports = "/staff3.a1ec5a8f.jpeg";
+},{}],"pages/Aboutus-page.js":[function(require,module,exports) {
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32970,6 +32986,23 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+<<<<<<< HEAD
+=======
+var _other = _interopRequireDefault(require("../../assets/img/other.jpg"));
+
+var _other2 = _interopRequireDefault(require("../../assets/img/other1.jpg"));
+
+var _other3 = _interopRequireDefault(require("../../assets/img/other3.jpg"));
+
+var _other4 = _interopRequireDefault(require("../../assets/img/other4.jpg"));
+
+var _staff = _interopRequireDefault(require("../../assets/img/staff1.jpeg"));
+
+var _staff2 = _interopRequireDefault(require("../../assets/img/staff2.jpeg"));
+
+var _staff3 = _interopRequireDefault(require("../../assets/img/staff3.jpeg"));
+
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /*
@@ -32990,7 +33023,11 @@ var AboutUsPage = function AboutUsPage() {
   }, _react.default.createElement("div", {
     className: "intro-img"
   }, _react.default.createElement("img", {
+<<<<<<< HEAD
     src: other4,
+=======
+    src: _other4.default,
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
     alt: ""
   })), _react.default.createElement("div", {
     className: "para"
@@ -33001,19 +33038,31 @@ var AboutUsPage = function AboutUsPage() {
   }, _react.default.createElement("div", {
     className: "about-product"
   }, _react.default.createElement("h3", null, "Blueberry"), _react.default.createElement("span", null, _react.default.createElement("img", {
+<<<<<<< HEAD
     src: other,
+=======
+    src: _other.default,
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
     alt: "",
     className: ""
   })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")), _react.default.createElement("div", {
     className: "about-product"
   }, _react.default.createElement("h3", null, "Fruit cake"), _react.default.createElement("span", null, _react.default.createElement("img", {
+<<<<<<< HEAD
     src: other3,
+=======
+    src: _other3.default,
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
     alt: "",
     className: ""
   })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")), _react.default.createElement("div", {
     className: "about-product"
   }, _react.default.createElement("h3", null, "Chocolate"), _react.default.createElement("span", null, _react.default.createElement("img", {
+<<<<<<< HEAD
     src: other1,
+=======
+    src: _other2.default,
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
     alt: "",
     className: ""
   })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")))), _react.default.createElement("div", {
@@ -33023,21 +33072,33 @@ var AboutUsPage = function AboutUsPage() {
   }, _react.default.createElement("h1", null, "Meet our staff"), _react.default.createElement("div", {
     className: "staff"
   }, _react.default.createElement("figure", null, _react.default.createElement("img", {
+<<<<<<< HEAD
     src: staff1,
+=======
+    src: _staff.default,
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
     alt: ""
   }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
     className: "name"
   }, "April Smith"), _react.default.createElement("p", {
     className: "role"
   }, "Designer"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+<<<<<<< HEAD
     src: staff3,
+=======
+    src: _staff3.default,
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
     alt: ""
   }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
     className: "name"
   }, "Mary Addams"), _react.default.createElement("p", {
     className: "role"
   }, "Chef"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+<<<<<<< HEAD
     src: staff2,
+=======
+    src: _staff2.default,
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
     alt: ""
   }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
     className: "name"
@@ -33048,7 +33109,11 @@ var AboutUsPage = function AboutUsPage() {
 
 var _default = AboutUsPage;
 exports.default = _default;
+<<<<<<< HEAD
 },{"react":"../node_modules/react/index.js"}],"../assets/img/td.jpg":[function(require,module,exports) {
+=======
+},{"react":"../node_modules/react/index.js","../../assets/img/other.jpg":"../assets/img/other.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg","../../assets/img/other3.jpg":"../assets/img/other3.jpg","../../assets/img/other4.jpg":"../assets/img/other4.jpg","../../assets/img/staff1.jpeg":"../assets/img/staff1.jpeg","../../assets/img/staff2.jpeg":"../assets/img/staff2.jpeg","../../assets/img/staff3.jpeg":"../assets/img/staff3.jpeg"}],"../assets/img/td.jpg":[function(require,module,exports) {
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
 module.exports = "/td.86f58e3d.jpg";
 },{}],"pages/Contact-page.js":[function(require,module,exports) {
 "use strict";
@@ -33289,7 +33354,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../../assets/img/cakes/cup/cup.jpg":[["cup.39370689.jpg","../assets/img/cakes/cup/cup.jpg"],"../assets/img/cakes/cup/cup.jpg"],"./../../assets/img/cakes/cup/cup2.jpg":[["cup2.4ecb9088.jpg","../assets/img/cakes/cup/cup2.jpg"],"../assets/img/cakes/cup/cup2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
+},{"./../../assets/img/about-bg.jpeg":[["about-bg.bdd3741e.jpeg","../assets/img/about-bg.jpeg"],"../assets/img/about-bg.jpeg"],"./../../assets/img/cakes/cup/cup.jpg":[["cup.39370689.jpg","../assets/img/cakes/cup/cup.jpg"],"../assets/img/cakes/cup/cup.jpg"],"./../../assets/img/cakes/cup/cup2.jpg":[["cup2.4ecb9088.jpg","../assets/img/cakes/cup/cup2.jpg"],"../assets/img/cakes/cup/cup2.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/symbol-observable/es/ponyfill.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35791,7 +35856,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
+<<<<<<< HEAD
   var ws = new WebSocket(protocol + '://' + hostname + ':' + "41465" + '/');
+=======
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45965" + '/');
+>>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
 
   ws.onmessage = function (event) {
     checkedAssets = {};

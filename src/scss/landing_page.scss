@@ -48,7 +48,7 @@ button:focus {
 
   &:hover {
     cursor: pointer;
-  transform: scale(1.05);
+    transform: scale(1.05);
   }
 }
 .call-products figcaption {
@@ -160,6 +160,4 @@ img.product {
     margin-left: -5%;
     font-size: 20px;
   }
-
-  
 }
