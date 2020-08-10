@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Form from '../components/Form';
+import FormInput from '../components/FormInput';
+import Button from '../components/Button';
 
 class Login extends Component {
   render() {
@@ -18,7 +21,7 @@ class Login extends Component {
             <h5 className="Register-subtext">
               Not into cake yet? <span>Get In!</span>
             </h5>
-            <form className="Reg-form Login-form">
+            {/* <form className="Reg-form Login-form">
               <div>
                 <input
                   type="email"
@@ -36,11 +39,20 @@ class Login extends Component {
                 <label>Password</label>
               </div>
               <button className="Register-btn">Login</button>
-              <h5 className="Register-subtext">
+              
+            </form> */}
+            <Form>
+              <FormInput type="email" placeholder="Email" label="Email" />
+              <FormInput
+                type="password"
+                placeholder="Password"
+                label="Password"
+              />
+              <Button type="submit" placeholder="Sign In" />
+              <h5 className="cta-text">
                 Don't have an account yet?<Link to="/register"> Sign Up! </Link>
-                <span></span>
               </h5>
-            </form>
+            </Form>
           </div>
         </div>
       </div>

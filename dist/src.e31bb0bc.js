@@ -32683,7 +32683,78 @@ function Landing() {
     id: "caption"
   }))))));
 }
-},{"react":"../node_modules/react/index.js","../components/Header":"components/Header.js","../components/Footer":"components/Footer.js","../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","../../assets/img/flat-cake.jpg":"../assets/img/flat-cake.jpg","../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"pages/Signin-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/Header":"components/Header.js","../components/Footer":"components/Footer.js","../../assets/img/cakes/birthday/birthday.jpg":"../assets/img/cakes/birthday/birthday.jpg","../../assets/img/cakes/birthday/birthday1.jpg":"../assets/img/cakes/birthday/birthday1.jpg","../../assets/img/cakes/birthday/birthday2.jpg":"../assets/img/cakes/birthday/birthday2.jpg","../../assets/img/cakes/birthday/birthday3.jpg":"../assets/img/cakes/birthday/birthday3.jpg","../../assets/img/cakes/birthday/birthday4.jpg":"../assets/img/cakes/birthday/birthday4.jpg","../../assets/img/cakes/birthday/birthday5.jpg":"../assets/img/cakes/birthday/birthday5.jpg","../../assets/img/flat-cake.jpg":"../assets/img/flat-cake.jpg","../../assets/img/cakes/cup/cup.jpg":"../assets/img/cakes/cup/cup.jpg","../../assets/img/cakes/cup/cup1.jpg":"../assets/img/cakes/cup/cup1.jpg","../../assets/img/cakes/cup/cup2.jpg":"../assets/img/cakes/cup/cup2.jpg","../../assets/img/cakes/cup/cup3.jpg":"../assets/img/cakes/cup/cup3.jpg","../../assets/img/cakes/cup/cup4.jpg":"../assets/img/cakes/cup/cup4.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg"}],"components/Form.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Form = function Form(_ref) {
+  var children = _ref.children;
+  return _react.default.createElement("div", null, _react.default.createElement("form", {
+    className: "form"
+  }, children));
+};
+
+var _default = Form;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/FormInput.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var FormInput = function FormInput(_ref) {
+  var type = _ref.type,
+      placeholder = _ref.placeholder,
+      label = _ref.label;
+  return _react.default.createElement("div", {
+    className: "form-group"
+  }, _react.default.createElement("input", {
+    className: "form-input",
+    type: type,
+    placeholder: placeholder
+  }), label ? _react.default.createElement("label", null, label) : null);
+};
+
+var _default = FormInput;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"components/Button.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Button = function Button(_ref) {
+  var type = _ref.type,
+      placeholder = _ref.placeholder;
+  return _react.default.createElement("div", null, _react.default.createElement("button", {
+    className: "btn",
+    type: type
+  }, placeholder));
+};
+
+var _default = Button;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"pages/Signin-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32694,6 +32765,14 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
+
+var _Form = _interopRequireDefault(require("../components/Form"));
+
+var _FormInput = _interopRequireDefault(require("../components/FormInput"));
+
+var _Button = _interopRequireDefault(require("../components/Button"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -32749,23 +32828,22 @@ var Login = /*#__PURE__*/function (_Component) {
         className: "Register-heading"
       }, "Sign In"), _react.default.createElement("h5", {
         className: "Register-subtext"
-      }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement("form", {
-        className: "Reg-form Login-form"
-      }, _react.default.createElement("div", null, _react.default.createElement("input", {
+      }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement(_Form.default, null, _react.default.createElement(_FormInput.default, {
         type: "email",
-        placeholder: "Email Address",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Email")), _react.default.createElement("div", null, _react.default.createElement("input", {
+        placeholder: "Email",
+        label: "Email"
+      }), _react.default.createElement(_FormInput.default, {
         type: "password",
         placeholder: "Password",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Password")), _react.default.createElement("button", {
-        className: "Register-btn"
-      }, "Login"), _react.default.createElement("h5", {
-        className: "Register-subtext"
+        label: "Password"
+      }), _react.default.createElement(_Button.default, {
+        type: "submit",
+        placeholder: "Sign In"
+      }), _react.default.createElement("h5", {
+        className: "cta-text"
       }, "Don't have an account yet?", _react.default.createElement(_reactRouterDom.Link, {
         to: "/register"
-      }, " Sign Up! "), _react.default.createElement("span", null))))));
+      }, " Sign Up! "))))));
     }
   }]);
 
@@ -32774,7 +32852,7 @@ var Login = /*#__PURE__*/function (_Component) {
 
 var _default = Login;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"pages/Register-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../components/Form":"components/Form.js","../components/FormInput":"components/FormInput.js","../components/Button":"components/Button.js"}],"pages/Register-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32785,6 +32863,14 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
+
+var _Form = _interopRequireDefault(require("../components/Form"));
+
+var _FormInput = _interopRequireDefault(require("../components/FormInput"));
+
+var _Button = _interopRequireDefault(require("../components/Button"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
@@ -32842,27 +32928,30 @@ var Register = /*#__PURE__*/function (_Component) {
         className: "Register-subtext"
       }, "Already registered?", ' ', _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/signin"
-      }, " Sign in!"))), _react.default.createElement("form", {
-        className: "Reg-form Reg-form-h"
-      }, _react.default.createElement("input", {
+      }, " Sign in!"))), _react.default.createElement(_Form.default, null, _react.default.createElement(_FormInput.default, {
         type: "text",
         placeholder: "First Name",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "First Name"), _react.default.createElement("input", {
+        label: "First Name"
+      }), _react.default.createElement(_FormInput.default, {
         type: "text",
         placeholder: "Last Name",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Last Name"), _react.default.createElement("input", {
+        label: "Last Name"
+      }), _react.default.createElement(_FormInput.default, {
         type: "email",
-        placeholder: "Email Address",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Email"), _react.default.createElement("input", {
+        placeholder: "Email",
+        label: "Email"
+      }), _react.default.createElement(_FormInput.default, {
         type: "password",
         placeholder: "Password",
-        className: "input-full"
-      }), _react.default.createElement("label", null, "Password"), _react.default.createElement("button", {
-        className: "Register-btn"
-      }, "Register")))));
+        label: "Password"
+      }), _react.default.createElement(_FormInput.default, {
+        type: "password",
+        placeholder: "Confirm Password",
+        label: "Confirm Password"
+      }), _react.default.createElement(_Button.default, {
+        type: "submit",
+        placeholder: "Sign Up"
+      })))));
     }
   }]);
 
@@ -32871,9 +32960,7 @@ var Register = /*#__PURE__*/function (_Component) {
 
 var _default = Register;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../assets/img/td.jpg":[function(require,module,exports) {
-module.exports = "/td.86f58e3d.jpg";
-},{}],"pages/Aboutus-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../components/Form":"components/Form.js","../components/FormInput":"components/FormInput.js","../components/Button":"components/Button.js"}],"pages/Aboutus-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32883,35 +32970,87 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _td = _interopRequireDefault(require("../../assets/img/td.jpg"));
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/*
+import other from '../../assets/img/other.jpg'
+import other1 from '../../assets/img/other1.jpg'
+import other3 from '../../assets/img/other3.jpg'
+import other4 from '../../assets/img/other4.jpg'
+
+import staff1 from '../../assets/img/staff1.jpeg'
+import staff2 from '../../assets/img/staff2.jpeg'
+import staff3 from '../../assets/img/staff3.jpeg'
+*/
 var AboutUsPage = function AboutUsPage() {
   return _react.default.createElement("div", null, _react.default.createElement("div", {
-    style: {
-      height: 250,
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundImage: "url(".concat(_td.default, ")")
-    }
-  }, "about us"), _react.default.createElement("div", {
-    style: {
-      display: 'flex'
-    }
-  }, _react.default.createElement("aside", {
-    style: {
-      width: '65%'
-    }
-  }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Who are we?"), _react.default.createElement("div", null, _react.default.createElement("p", null, "The \"Cake Shop\" is a Jordanian Brand that started as a small family business."), _react.default.createElement("p", null, "The owners are Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees."), _react.default.createElement("p", null, "Although not small any more, the business tries to keep the family atmosphere where we care not only about our company, our products and our staff, but also we consider each \"customer\" a member in this family of \"cake shoppers\"."), _react.default.createElement("p", null, "Our mission is to make people happy. Making delicious cakes, having relaxing chairs in a smoking free environment and keeping our prices reasonable are all different ways to achieve this goal.")))), _react.default.createElement("main", null, _react.default.createElement("div", null, "something goes here"))));
+    className: "about-body"
+  }, _react.default.createElement("div", {
+    className: "about-intro"
+  }, _react.default.createElement("div", {
+    className: "intro-img"
+  }, _react.default.createElement("img", {
+    src: other4,
+    alt: ""
+  })), _react.default.createElement("div", {
+    className: "para"
+  }, _react.default.createElement("h2", null, "Welcome to foldables"), _react.default.createElement("p", null, "Mollit occaecat ut sint in voluptate consectetur fugiat aliqua reprehenderit. Tempor ullamco duis occaecat enim incididunt qui reprehenderit dolor do. Lorem nisi sit ipsum aliqua anim ea et non eu cillum do aliqua. Fugiat officia nisi adipisicing nostrud velit elit sunt minim consequat aliquip sunt."), _react.default.createElement("p", null, "Sunt exercitation eiusmod aliqua aute veniam Lorem cupidatat. Sunt enim tempor culpa velit anim ipsum commodo voluptate eu aliqua. Proident proident do in id culpa cillum anim ullamco fugiat est veniam. Eu amet exercitation et deserunt nisi amet eu et excepteur. Anim quis mollit adipisicing est voluptate dolor cillum occaecat nostrud dolore culpa est. Consectetur esse est id id commodo exercitation qui. Laboris mollit eu pariatur minim duis laboris commodo in in."))), _react.default.createElement("div", {
+    className: "about-offer"
+  }, _react.default.createElement("h1", null, "What we offer at Foldables"), _react.default.createElement("p", null, "A taste of sweetness"), _react.default.createElement("div", {
+    className: "learn-more"
+  }, _react.default.createElement("div", {
+    className: "about-product"
+  }, _react.default.createElement("h3", null, "Blueberry"), _react.default.createElement("span", null, _react.default.createElement("img", {
+    src: other,
+    alt: "",
+    className: ""
+  })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")), _react.default.createElement("div", {
+    className: "about-product"
+  }, _react.default.createElement("h3", null, "Fruit cake"), _react.default.createElement("span", null, _react.default.createElement("img", {
+    src: other3,
+    alt: "",
+    className: ""
+  })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")), _react.default.createElement("div", {
+    className: "about-product"
+  }, _react.default.createElement("h3", null, "Chocolate"), _react.default.createElement("span", null, _react.default.createElement("img", {
+    src: other1,
+    alt: "",
+    className: ""
+  })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")))), _react.default.createElement("div", {
+    className: "latest-offer"
+  }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Foldables offer"), _react.default.createElement("h4", null, "Our latest offer"), _react.default.createElement("p", null, "Proident nulla cillum eu fugiat consequat commodo exercitation pariatur laboris do amet ad elit in. Dolore tempor elit excepteur sit ipsum culpa consectetur anim labore. Id pariatur aliquip ad et fugiat velit. Est quis aute sint id exercitation voluptate adipisicing duis eu occaecat irure."))), _react.default.createElement("div", {
+    className: "meet-our-staff"
+  }, _react.default.createElement("h1", null, "Meet our staff"), _react.default.createElement("div", {
+    className: "staff"
+  }, _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: staff1,
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "April Smith"), _react.default.createElement("p", {
+    className: "role"
+  }, "Designer"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: staff3,
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Mary Addams"), _react.default.createElement("p", {
+    className: "role"
+  }, "Chef"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: staff2,
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Justin Peters"), _react.default.createElement("p", {
+    className: "role"
+  }, "Manager")))))));
 };
 
 var _default = AboutUsPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../../assets/img/td.jpg":"../assets/img/td.jpg"}],"pages/Contact-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"../assets/img/td.jpg":[function(require,module,exports) {
+module.exports = "/td.86f58e3d.jpg";
+},{}],"pages/Contact-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35652,7 +35791,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38663" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41465" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

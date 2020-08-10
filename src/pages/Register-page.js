@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
+import Form from '../components/Form';
+import FormInput from '../components/FormInput';
+import Button from '../components/Button';
+
 class Register extends Component {
   render() {
     return (
@@ -21,7 +25,7 @@ class Register extends Component {
                 <Link to="/signin"> Sign in!</Link>
               </span>
             </h5>
-            <form className="Reg-form Reg-form-h">
+            {/* <form className="Reg-form Reg-form-h">
               <input
                 type="text"
                 placeholder="First Name"
@@ -47,7 +51,31 @@ class Register extends Component {
               />
               <label>Password</label>
               <button className="Register-btn">Register</button>
-            </form>
+            </form> */}
+            <Form>
+              <FormInput
+                type="text"
+                placeholder="First Name"
+                label="First Name"
+              />
+              <FormInput
+                type="text"
+                placeholder="Last Name"
+                label="Last Name"
+              />
+              <FormInput type="email" placeholder="Email" label="Email" />
+              <FormInput
+                type="password"
+                placeholder="Password"
+                label="Password"
+              />
+              <FormInput
+                type="password"
+                placeholder="Confirm Password"
+                label="Confirm Password"
+              />
+              <Button type="submit" placeholder="Sign Up" />
+            </Form>
           </div>
         </div>
       </div>

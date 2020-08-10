@@ -67,94 +67,10 @@
         color: $primary;
       }
     }
-
-    .Login-form {
-      height: 280px;
-    }
-
-    .Reg-form-h {
-      height: 450px;
-    }
-
-    .Reg-form {
-      background: #fff;
-      width: 100%;
-      border-radius: 5px;
-      margin-top: 28px;
-      padding: 15px 28px;
-      box-shadow: 0px 20px 50px #eaeee9;
-
-      .input-half {
-        width: 220px;
-      }
-
-      .input-full {
-        width: 100%;
-      }
-
-      input {
-        height: 40px;
-        border-radius: 0;
-        text-indent: 8px;
-        margin-top: 30px;
-        border-bottom: 1px solid #6a7e8a;
-        transition: all 0.3s ease-in-out;
-
-        &:focus {
-          outline: none;
-          border: 0;
-          border-bottom: 1px solid green;
-
-          box-shadow: 0 2px 10px rgba(#000, .15);
-
-          &:invalid {
-            border-bottom: 1px solid red;
-          }
-        }
-
-        &:placeholder-shown+label {
-          //When the placeholder is shown hide label
-          opacity: 0;
-          visibility: hidden; //Opacity is not required with this, but visibility cannot be animated
-          transform: translateY(-30px) translateX(20px);
-        }
-
-      }
-
-      label {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: normal;
-        color: #6a7e8a;
-
-        transform: translateX(20px) translateY(3px);
-        transition: all .5s;
-      }
-
-
-
-      .Register-btn {
-        margin-top: 32px;
-        background-color: rgba($pinkish, .8);
-        color: #fff;
-        width: 150px;
-        height: 35px;
-        line-height: 14px;
-        font-size: 16px;
-        border-radius: 5px;
-        float: right;
-        border: none;
-        cursor: pointer;
-        transition: all .3S;
-
-        &:hover {
-          background-color: $pinkish;
-        }
-
-        &:active {
-          transform: translateY(4px);
-        }
-      }
-    }
   }
+}
+
+.cta-text {
+  display: block;
+  margin-top: 25px;
 }

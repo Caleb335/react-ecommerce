@@ -410,63 +410,65 @@ img.product {
       margin-top: 8px; }
       .Register .Register-form .Register-subtext span {
         color: #9bc7fb; }
-    .Register .Register-form .Login-form {
-      height: 280px; }
-    .Register .Register-form .Reg-form-h {
-      height: 450px; }
-    .Register .Register-form .Reg-form {
-      background: #fff;
-      width: 100%;
-      border-radius: 5px;
-      margin-top: 28px;
-      padding: 15px 28px;
-      box-shadow: 0px 20px 50px #eaeee9; }
-      .Register .Register-form .Reg-form .input-half {
-        width: 220px; }
-      .Register .Register-form .Reg-form .input-full {
-        width: 100%; }
-      .Register .Register-form .Reg-form input {
-        height: 40px;
-        border-radius: 0;
-        text-indent: 8px;
-        margin-top: 30px;
-        border-bottom: 1px solid #6a7e8a;
-        transition: all 0.3s ease-in-out; }
-        .Register .Register-form .Reg-form input:focus {
-          outline: none;
-          border: 0;
-          border-bottom: 1px solid green;
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
-          .Register .Register-form .Reg-form input:focus:invalid {
-            border-bottom: 1px solid red; }
-        .Register .Register-form .Reg-form input:placeholder-shown + label {
-          opacity: 0;
-          visibility: hidden;
-          transform: translateY(-30px) translateX(20px); }
-      .Register .Register-form .Reg-form label {
-        display: inline-block;
-        font-size: 14px;
-        font-weight: normal;
-        color: #6a7e8a;
-        transform: translateX(20px) translateY(3px);
-        transition: all .5s; }
-      .Register .Register-form .Reg-form .Register-btn {
-        margin-top: 32px;
-        background-color: rgba(255, 0, 102, 0.8);
-        color: #fff;
-        width: 150px;
-        height: 35px;
-        line-height: 14px;
-        font-size: 16px;
-        border-radius: 5px;
-        float: right;
-        border: none;
-        cursor: pointer;
-        transition: all .3S; }
-        .Register .Register-form .Reg-form .Register-btn:hover {
-          background-color: #ff0066; }
-        .Register .Register-form .Reg-form .Register-btn:active {
-          transform: translateY(4px); }
+
+.cta-text {
+  display: block;
+  margin-top: 25px; }
+
+.form {
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 28px;
+  padding: 15px 28px;
+  box-shadow: 0px 20px 50px #eaeee9; }
+  .form-input {
+    display: block;
+    height: 40px;
+    border-radius: 0;
+    text-indent: 8px;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #6a7e8a;
+    transition: all 0.3s ease-in-out;
+    width: 100%; }
+    .form-input:focus {
+      outline: none;
+      border: 0;
+      border-bottom: 1px solid green;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
+      .form-input:focus:invalid {
+        border-bottom: 1px solid red; }
+    .form-input:placeholder-shown + label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-30px) translateX(20px); }
+  .form label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #6a7e8a;
+    transform: translateX(20px) translateY(3px);
+    transition: all .5s; }
+
+.btn {
+  display: block;
+  margin-top: 32px;
+  background-color: rgba(255, 0, 102, 0.8);
+  color: #fff;
+  width: 150px;
+  height: 35px;
+  line-height: 14px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all .3S; }
+  .btn:hover {
+    background-color: #ff0066; }
+  .btn:active {
+    transform: translateY(4px); }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
