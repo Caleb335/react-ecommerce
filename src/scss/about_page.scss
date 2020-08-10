@@ -1,0 +1,139 @@
+@import './variables';
+
+*{
+  font-family: 'Courgette', cursive;
+}
+
+.about-intro{
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  flex-grow: 1;
+  margin: auto;
+  justify-content: center;
+}
+.about-intro div{
+  min-width: 450px;
+  flex-wrap: wrap;
+  width: 650px;
+  flex-grow: 1;
+}
+.about-intro img{
+  width: 100%;
+  height: 100%;
+  zoom: 1.5;
+}
+.about-intro div.para{
+  padding: 26px 28px 6px 38px;
+  line-height: 1.8em;
+}
+.about-intro div.para h2{
+  border-bottom: 1px solid $pinkish;
+  padding-bottom: 7px;
+  
+}
+.about-intro div.para p{
+  margin-top: 40px;
+}
+
+
+.about-offer{
+  padding: 50px 0px;
+  line-height: 50px;
+  background-color: rgba(221, 219, 219, 0.2);
+}
+.about-offer h1,
+.about-offer p{
+  text-align: center;
+}
+.learn-more{
+  display: flex;
+  min-width: 280px;
+  justify-content: space-evenly;
+}
+.about-product{
+  width: 330px;
+  text-align: center;
+  padding: 18px;
+  line-height: 29px;
+  background-color: white;
+}
+.about-product h3{
+  margin-bottom: 25px;
+}
+.about-product p{
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.about-product span{
+  width: max-content;
+  height: auto;
+  border-radius: 500px;
+  margin-bottom: 25px;
+}
+.about-product img{
+  border-radius: 500px;
+}
+.about-product button{
+  padding: 13px 18px;
+  border: 1px solid $pinkish;
+  background-color: white;
+  color: $pinkish;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+
+.latest-offer{
+  position: relative;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 30px;
+  background-image: url('../../assets/img/about-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.latest-offer div{
+  background-color: rgba(2, 0, 0, 0.8);
+  max-width: 100%;
+  height: 100%;
+  padding: 120px 100px;
+  color: white;
+}
+.latest-offer h4{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: $pinkish;
+}
+
+.staff{
+  display: flex;
+  min-width: 260px;
+  justify-content: space-evenly;
+  height: 430px;
+}
+.staff figure{
+  padding: 15px;
+  height: 100%;
+  text-align: center;
+}
+.staff img{
+  border-radius: 50px;
+  width: 73%;
+  height: 80%;
+}
+.staff figcaption{
+  text-align: center;
+  line-height: 1.7rem;
+}
+.staff figcaption .name{
+  font-weight: bolder;
+}
+.staff figcaption .role{
+  font-style: oblique;
+  color: grey;
+}
+.meet-our-staff h1{
+  text-align: center;
+  margin-bottom: 78px;
+}

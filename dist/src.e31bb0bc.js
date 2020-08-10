@@ -32871,8 +32871,10 @@ var Register = /*#__PURE__*/function (_Component) {
 
 var _default = Register;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../assets/img/td.jpg":[function(require,module,exports) {
-module.exports = "/td.86f58e3d.jpg";
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../assets/img/other.jpg":[function(require,module,exports) {
+module.exports = "/other.b33c2b8b.jpg";
+},{}],"../assets/img/other3.jpg":[function(require,module,exports) {
+module.exports = "/other3.dee78b88.jpg";
 },{}],"pages/Aboutus-page.js":[function(require,module,exports) {
 "use strict";
 
@@ -32883,35 +32885,87 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _td = _interopRequireDefault(require("../../assets/img/td.jpg"));
+var _other = _interopRequireDefault(require("../../assets/img/other.jpg"));
+
+var _other2 = _interopRequireDefault(require("../../assets/img/other1.jpg"));
+
+var _other3 = _interopRequireDefault(require("../../assets/img/other3.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import other4 from '../../assets/img/other4.jpg'
+// import staff1 from '../../assets/img/staff1.jpeg'
+// import staff2 from '../../assets/img/staff2.jpeg'
+// import staff3 from '../../assets/img/staff3.jpeg'
 var AboutUsPage = function AboutUsPage() {
   return _react.default.createElement("div", null, _react.default.createElement("div", {
-    style: {
-      height: 250,
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundImage: "url(".concat(_td.default, ")")
-    }
-  }, "about us"), _react.default.createElement("div", {
-    style: {
-      display: 'flex'
-    }
-  }, _react.default.createElement("aside", {
-    style: {
-      width: '65%'
-    }
-  }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Who are we?"), _react.default.createElement("div", null, _react.default.createElement("p", null, "The \"Cake Shop\" is a Jordanian Brand that started as a small family business."), _react.default.createElement("p", null, "The owners are Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees."), _react.default.createElement("p", null, "Although not small any more, the business tries to keep the family atmosphere where we care not only about our company, our products and our staff, but also we consider each \"customer\" a member in this family of \"cake shoppers\"."), _react.default.createElement("p", null, "Our mission is to make people happy. Making delicious cakes, having relaxing chairs in a smoking free environment and keeping our prices reasonable are all different ways to achieve this goal.")))), _react.default.createElement("main", null, _react.default.createElement("div", null, "something goes here"))));
+    className: "about-body"
+  }, _react.default.createElement("div", {
+    className: "about-intro"
+  }, _react.default.createElement("div", {
+    className: "intro-img"
+  }, _react.default.createElement("img", {
+    src: other4,
+    alt: ""
+  })), _react.default.createElement("div", {
+    className: "para"
+  }, _react.default.createElement("h2", null, "Welcome to foldables"), _react.default.createElement("p", null, "Mollit occaecat ut sint in voluptate consectetur fugiat aliqua reprehenderit. Tempor ullamco duis occaecat enim incididunt qui reprehenderit dolor do. Lorem nisi sit ipsum aliqua anim ea et non eu cillum do aliqua. Fugiat officia nisi adipisicing nostrud velit elit sunt minim consequat aliquip sunt."), _react.default.createElement("p", null, "Sunt exercitation eiusmod aliqua aute veniam Lorem cupidatat. Sunt enim tempor culpa velit anim ipsum commodo voluptate eu aliqua. Proident proident do in id culpa cillum anim ullamco fugiat est veniam. Eu amet exercitation et deserunt nisi amet eu et excepteur. Anim quis mollit adipisicing est voluptate dolor cillum occaecat nostrud dolore culpa est. Consectetur esse est id id commodo exercitation qui. Laboris mollit eu pariatur minim duis laboris commodo in in."))), _react.default.createElement("div", {
+    className: "about-offer"
+  }, _react.default.createElement("h1", null, "What we offer at Foldables"), _react.default.createElement("p", null, "A taste of sweetness"), _react.default.createElement("div", {
+    className: "learn-more"
+  }, _react.default.createElement("div", {
+    className: "about-product"
+  }, _react.default.createElement("h3", null, "Blueberry"), _react.default.createElement("span", null, _react.default.createElement("img", {
+    src: _other.default,
+    alt: "",
+    className: ""
+  })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")), _react.default.createElement("div", {
+    className: "about-product"
+  }, _react.default.createElement("h3", null, "Fruit cake"), _react.default.createElement("span", null, _react.default.createElement("img", {
+    src: _other3.default,
+    alt: "",
+    className: ""
+  })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")), _react.default.createElement("div", {
+    className: "about-product"
+  }, _react.default.createElement("h3", null, "Chocolate"), _react.default.createElement("span", null, _react.default.createElement("img", {
+    src: _other2.default,
+    alt: "",
+    className: ""
+  })), _react.default.createElement("p", null, "Id aute reprehenderit Lorem mollit deserunt cillum laborum anim. Quis id ea laborum amet anim."), _react.default.createElement("button", null, "Learn more")))), _react.default.createElement("div", {
+    className: "latest-offer"
+  }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Foldables offer"), _react.default.createElement("h4", null, "Our latest offer"), _react.default.createElement("p", null, "Proident nulla cillum eu fugiat consequat commodo exercitation pariatur laboris do amet ad elit in. Dolore tempor elit excepteur sit ipsum culpa consectetur anim labore. Id pariatur aliquip ad et fugiat velit. Est quis aute sint id exercitation voluptate adipisicing duis eu occaecat irure."))), _react.default.createElement("div", {
+    className: "meet-our-staff"
+  }, _react.default.createElement("h1", null, "Meet our staff"), _react.default.createElement("div", {
+    className: "staff"
+  }, _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: staff1,
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "April Smith"), _react.default.createElement("p", {
+    className: "role"
+  }, "Designer"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: staff3,
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Mary Addams"), _react.default.createElement("p", {
+    className: "role"
+  }, "Chef"))), _react.default.createElement("figure", null, _react.default.createElement("img", {
+    src: staff2,
+    alt: ""
+  }), _react.default.createElement("figcaption", null, _react.default.createElement("p", {
+    className: "name"
+  }, "Justin Peters"), _react.default.createElement("p", {
+    className: "role"
+  }, "Manager")))))));
 };
 
 var _default = AboutUsPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../../assets/img/td.jpg":"../assets/img/td.jpg"}],"pages/Contact-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../assets/img/other.jpg":"../assets/img/other.jpg","../../assets/img/other1.jpg":"../assets/img/other1.jpg","../../assets/img/other3.jpg":"../assets/img/other3.jpg"}],"../assets/img/td.jpg":[function(require,module,exports) {
+module.exports = "/td.86f58e3d.jpg";
+},{}],"pages/Contact-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35744,7 +35798,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57076" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60993" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
