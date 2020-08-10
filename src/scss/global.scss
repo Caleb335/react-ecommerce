@@ -113,10 +113,12 @@ footer {
   background: $bg-primary;
   color: $text-col;
   padding: 10px 0px 50px 0px;
-  background-image: linear-gradient(to top,
-      #b3e4f9 30%,
-      #cfebf9 80%,
-      white 100%);
+  background-image: linear-gradient(
+    to top,
+    #b3e4f9 30%,
+    #cfebf9 80%,
+    white 100%
+  );
 }
 
 footer h2 {
@@ -156,7 +158,6 @@ footer li {
 footer a:hover {
   color: $pinkish;
 }
-
 
 @media only screen and (max-width: 576px) {
   .menu {

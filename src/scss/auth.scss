@@ -105,20 +105,19 @@
           border: 0;
           border-bottom: 1px solid green;
 
-          box-shadow: 0 2px 10px rgba(#000, .15);
+          box-shadow: 0 2px 10px rgba(#000, 0.15);
 
           &:invalid {
             border-bottom: 1px solid red;
           }
         }
 
-        &:placeholder-shown+label {
+        &:placeholder-shown + label {
           //When the placeholder is shown hide label
           opacity: 0;
           visibility: hidden; //Opacity is not required with this, but visibility cannot be animated
           transform: translateY(-30px) translateX(20px);
         }
-
       }
 
       label {
@@ -128,14 +127,12 @@
         color: #6a7e8a;
 
         transform: translateX(20px) translateY(3px);
-        transition: all .5s;
+        transition: all 0.5s;
       }
-
-
 
       .Register-btn {
         margin-top: 32px;
-        background-color: rgba($pinkish, .8);
+        background-color: rgba($pinkish, 0.8);
         color: #fff;
         width: 150px;
         height: 35px;
@@ -145,7 +142,7 @@
         float: right;
         border: none;
         cursor: pointer;
-        transition: all .3S;
+        transition: all 0.3s;
 
         &:hover {
           background-color: $pinkish;
