@@ -38,10 +38,70 @@ img {
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
 * {
+  font-family: Montserrat; }
+
+.container {
+  background-color: #e5e6ea;
+  border-radius: 5px;
+  border: 2px solid red; }
+  .container .wrapper {
+    background-color: #f5f6f6;
+    display: flex;
+    align-items: center;
+    border: 2px solid blue;
+    max-width: 90%;
+    height: 700px;
+    margin: 100px auto; }
+    .container .wrapper .main-cart {
+      width: 65%;
+      height: 85%;
+      padding: 5%;
+      border: 2px solid black; }
+      .container .wrapper .main-cart .shop-text {
+        margin-bottom: 20px; }
+      .container .wrapper .main-cart .cart-item {
+        display: flex;
+        height: 150px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        border: 2px solid yellow; }
+        .container .wrapper .main-cart .cart-item .for-picture {
+          height: 120px;
+          width: 120px;
+          background-color: green;
+          border-radius: 50%; }
+      .container .wrapper .main-cart .total {
+        display: flex;
+        justify-content: space-between; }
+    .container .wrapper .checkout {
+      margin-right: 25px;
+      background-color: #41434b;
+      border-radius: 5px;
+      height: 90%;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white; }
+      .container .wrapper .checkout .content {
+        height: 85%;
+        width: 85%;
+        border: 2px solid firebrick; }
+        .container .wrapper .checkout .content .card-type {
+          height: 200px;
+          border: 1px solid saddlebrown; }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif; }
+
+body {
+  background: ghostwhite; }
 
 .app__base {
   min-height: 100vh; }
@@ -75,7 +135,7 @@ nav ul li a {
   nav ul li a:hover {
     text-decoration: underline;
     transition: all 0.5s ease;
-    color: #FF0066; }
+    color: #ff0066; }
 
 .fa-cart-arrow-down {
   font-size: 20px; }
@@ -103,10 +163,16 @@ nav ul li a {
 .image-cta {
   height: 580px;
   width: 580px;
-  border: 3px solid #FF0066;
+  border: 3px solid #ff0066;
   border-radius: 50%;
   padding: 35px;
   margin-top: 2%; }
+
+.menu {
+  display: none; }
+
+.fa-bars {
+  font-size: 28px; }
 
 footer {
   background: #b3e4f9;
@@ -119,7 +185,7 @@ footer h2 {
   margin-top: 20px; }
 
 footer h2:hover {
-  color: #FF0066;
+  color: #ff0066;
   font-weight: lighter;
   cursor: pointer;
   transition: all 3s ease; }
@@ -142,7 +208,16 @@ footer li {
   margin-left: 10px; }
 
 footer a:hover {
-  color: #FF0066; }
+  color: #ff0066; }
+
+@media only screen and (max-width: 576px) {
+  .menu {
+    display: block; }
+  nav {
+    display: none; }
+  header {
+    justify-content: space-between;
+    padding: 15px 18px; } }
 
 .product_page {
   padding: 2em; }
@@ -209,8 +284,8 @@ button:focus {
 
 .call-buttons button:hover,
 .call-buttons button:focus {
-  background-color: #FF0066;
-  border: 1px solid #FF0066;
+  background-color: #ff0066;
+  border: 1px solid #ff0066;
   color: white;
   transition: all 0.7s ease-in-out; }
 
@@ -221,19 +296,18 @@ button:focus {
   padding: 10px; }
 
 .call-products figure {
-  border: 1px solid black;
   padding: 7px;
   border-radius: 5px;
   margin-top: 12px;
   box-shadow: 2px 3px 9px #7d747b;
-  transition: transform .5s; }
-
-.call-products figure:hover {
-  cursor: pointer;
-  transform: scale(1.05); }
+  transition: transform 0.5s;
+  margin: 22px 14px; }
+  .call-products figure:hover {
+    cursor: pointer;
+    transform: scale(1.05); }
 
 .call-products figcaption {
-  padding: 8px 16px;
+  padding: 5px 16px;
   text-align: center;
   background-color: #f0eeee; }
 
@@ -243,14 +317,14 @@ button:focus {
 
 .call-products figcaption button {
   padding: 5px 10px;
-  border: 1px solid #FF0066;
+  border: 1px solid #ff0066;
   border-radius: 6px;
   color: white;
-  background-color: #FF0066; }
+  background-color: #ff0066; }
 
 .call-products figcaption button:hover {
   background-color: white;
-  color: #FF0066;
+  color: #ff0066;
   transition: all 0.7s ease; }
 
 img.product {
@@ -315,16 +389,32 @@ img.product {
   cursor: pointer; }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 576px) {
   .modal-content {
-    width: 100%; } }
+    width: 100%; }
+  .header-intro {
+    display: block;
+    width: 100%;
+    padding: 2px 10px; }
+    .header-intro h2 {
+      font-size: 32px; }
+    .header-intro p {
+      font-size: 16px;
+      width: 390px; }
+  .header-intro .image-cta {
+    display: none; }
+  .text-cta {
+    width: 500px;
+    padding: 30px;
+    margin-left: -5%;
+    font-size: 20px; } }
 
 ::-webkit-scrollbar {
   height: 5px;
   width: 7px; }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF0066;
+  background: #ff0066;
   border-radius: 5px; }
 
 .Register {
@@ -373,38 +463,53 @@ img.product {
     .Register .Register-form .Register-subtext {
       font-size: 16px;
       font-weight: normal;
-      color: #6A7E8A;
+      color: #6a7e8a;
       margin-top: 8px; }
       .Register .Register-form .Register-subtext span {
         color: #9bc7fb; }
     .Register .Register-form .Login-form {
-      height: 250px; }
+      height: 280px; }
     .Register .Register-form .Reg-form-h {
-      height: 320px; }
+      height: 450px; }
     .Register .Register-form .Reg-form {
       background: #fff;
       width: 100%;
       border-radius: 5px;
       margin-top: 28px;
       padding: 15px 28px;
-      box-shadow: 0px 20px 50px #EAEEE9; }
+      box-shadow: 0px 20px 50px #eaeee9; }
       .Register .Register-form .Reg-form .input-half {
         width: 220px; }
       .Register .Register-form .Reg-form .input-full {
         width: 100%; }
       .Register .Register-form .Reg-form input {
         height: 40px;
-        border-radius: 4px;
+        border-radius: 0;
         text-indent: 8px;
         margin-top: 30px;
-        border: 1px solid #6a7e8a;
-        transition: all .3s ease-in-out; }
+        border-bottom: 1px solid #6a7e8a;
+        transition: all 0.3s ease-in-out; }
         .Register .Register-form .Reg-form input:focus {
-          border-color: #9bc7fb;
-          border-width: 1.5px; }
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid green;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); }
+          .Register .Register-form .Reg-form input:focus:invalid {
+            border-bottom: 1px solid red; }
+        .Register .Register-form .Reg-form input:placeholder-shown + label {
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(-30px) translateX(20px); }
+      .Register .Register-form .Reg-form label {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: normal;
+        color: #6a7e8a;
+        transform: translateX(20px) translateY(3px);
+        transition: all .5s; }
       .Register .Register-form .Reg-form .Register-btn {
         margin-top: 32px;
-        background: #FF0066;
+        background-color: rgba(255, 0, 102, 0.8);
         color: #fff;
         width: 150px;
         height: 35px;
@@ -413,7 +518,12 @@ img.product {
         border-radius: 5px;
         float: right;
         border: none;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: all .3S; }
+        .Register .Register-form .Reg-form .Register-btn:hover {
+          background-color: #ff0066; }
+        .Register .Register-form .Reg-form .Register-btn:active {
+          transform: translateY(4px); }
 
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */

@@ -1,11 +1,11 @@
 @import './variables';
 
 ::-webkit-scrollbar {
-    height: 5px;
-    width: 7px;
+  height: 5px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: $pinkish;
-    border-radius: 5px;
+  background: $pinkish;
+  border-radius: 5px;
 }

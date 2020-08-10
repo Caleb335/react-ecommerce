@@ -1,24 +1,24 @@
 @import './variables';
 
-.landing-body{
+.landing-body {
   width: 100%;
   margin: 0 auto;
   padding: 50px 0;
 }
 button:hover,
-button:focus{
+button:focus {
   cursor: pointer;
   outline: none;
 }
-.call-to-action{
+.call-to-action {
   width: 100%;
   max-width: 1200px;
   margin: auto;
 }
-.call-buttons{
+.call-buttons {
   margin-left: 20px;
 }
-.call-buttons button{
+.call-buttons button {
   background-color: white;
   border: 1px solid black;
   padding: 4px 7px;
@@ -26,52 +26,53 @@ button:focus{
   margin-left: 10px;
 }
 .call-buttons button:hover,
-.call-buttons button:focus{
+.call-buttons button:focus {
   background-color: $pinkish;
   border: 1px solid $pinkish;
   color: white;
   transition: all 0.7s ease-in-out;
 }
-.call-products{
+.call-products {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 10px;
 }
-.call-products figure{
-  border: 1px solid black;
+.call-products figure {
   padding: 7px;
   border-radius: 5px;
   margin-top: 12px;
   box-shadow: 2px 3px 9px #7d747b;
-  transition: transform .5s;
-}
-.call-products figure:hover{
-  cursor: pointer;
+  transition: transform 0.5s;
+  margin: 22px 14px;
+
+  &:hover {
+    cursor: pointer;
   transform: scale(1.05);
+  }
 }
-.call-products figcaption{
-  padding: 8px 16px;
+.call-products figcaption {
+  padding: 5px 16px;
   text-align: center;
   background-color: rgb(240, 238, 238);
 }
-.call-products figcaption p{
+.call-products figcaption p {
   padding: 3px 0px;
   font-weight: bolder;
 }
-.call-products figcaption button{
+.call-products figcaption button {
   padding: 5px 10px;
   border: 1px solid $pinkish;
   border-radius: 6px;
   color: white;
   background-color: $pinkish;
 }
-.call-products figcaption button:hover{
+.call-products figcaption button:hover {
   background-color: white;
   color: $pinkish;
   transition: all 0.7s ease;
 }
-img.product{
+img.product {
   height: 310px;
   width: 250px;
   margin-top: 10px;
@@ -129,8 +130,36 @@ img.product{
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 576px) {
   .modal-content {
     width: 100%;
   }
+
+  .header-intro {
+    display: block;
+    width: 100%;
+    padding: 2px 10px;
+
+    & h2 {
+      font-size: 32px;
+    }
+
+    & p {
+      font-size: 16px;
+      width: 390px;
+    }
+  }
+
+  .header-intro .image-cta {
+    display: none;
+  }
+
+  .text-cta {
+    width: 500px;
+    padding: 30px;
+    margin-left: -5%;
+    font-size: 20px;
+  }
+
+  
 }

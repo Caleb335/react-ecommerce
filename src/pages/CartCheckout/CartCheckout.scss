@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+*{
+    font-family: Montserrat;
+}
+
+
+.container {
+    background-color: #e5e6ea;
+    border-radius: 5px;
+    border: 2px solid red;
+
+    .wrapper {
+        background-color: #f5f6f6;
+        display: flex;
+        align-items: center;
+        border: 2px solid blue;
+        max-width: 90%;
+        height: 700px;
+        margin: 100px auto;
+
+        .main-cart {
+            width: 65%;
+            height: 85%;
+            padding: 5%;
+            border: 2px solid black;
+
+            .shop-text {
+                margin-bottom: 20px;
+            }
+
+            .cart-item {
+                display: flex;
+                height: 150px;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+                border: 2px solid yellow;
+
+                .for-picture {
+                    height: 120px;
+                    width: 120px;
+                    background-color: green;
+                    border-radius: 50%;
+                }
+
+            }
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+            }
+
+        }
+
+        .checkout {
+            margin-right: 25px;
+            background-color: #41434b;
+            border-radius: 5px;
+            height: 90%;
+            width:35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+            .content {
+                height: 85%;
+                width: 85%;
+                border: 2px solid firebrick;
+
+                .card-type {
+                    height: 200px;
+                    border: 1px solid saddlebrown;
+                }
+            }
+        }
+    }
+}

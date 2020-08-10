@@ -32501,7 +32501,11 @@ function Header() {
     to: "cart"
   }, "Cart ", _react.default.createElement("i", {
     "class": "fa fa-cart-arrow-down"
-  })))))));
+  }))))), _react.default.createElement("div", {
+    className: "menu"
+  }, _react.default.createElement("i", {
+    "class": "fa fa-bars"
+  }))));
 }
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"components/Footer.js":[function(require,module,exports) {
 "use strict";
@@ -32747,15 +32751,15 @@ var Login = /*#__PURE__*/function (_Component) {
         className: "Register-subtext"
       }, "Not into cake yet? ", _react.default.createElement("span", null, "Get In!")), _react.default.createElement("form", {
         className: "Reg-form Login-form"
-      }, _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }, _react.default.createElement("div", null, _react.default.createElement("input", {
         type: "email",
         placeholder: "Email Address",
         className: "input-full"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }), _react.default.createElement("label", null, "Email")), _react.default.createElement("div", null, _react.default.createElement("input", {
         type: "password",
         placeholder: "Password",
         className: "input-full"
-      }))), _react.default.createElement("button", {
+      }), _react.default.createElement("label", null, "Password")), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Login"), _react.default.createElement("h5", {
         className: "Register-subtext"
@@ -32836,29 +32840,27 @@ var Register = /*#__PURE__*/function (_Component) {
         className: "Register-heading"
       }, "Create an account with us"), _react.default.createElement("h5", {
         className: "Register-subtext"
-      }, "Already registered? ", _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
+      }, "Already registered?", ' ', _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/signin"
       }, " Sign in!"))), _react.default.createElement("form", {
         className: "Reg-form Reg-form-h"
-      }, _react.default.createElement("div", {
-        className: "flex flex-btw"
-      }, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }, _react.default.createElement("input", {
         type: "text",
         placeholder: "First Name",
-        className: "input-half"
-      })), _react.default.createElement("label", null, _react.default.createElement("input", {
+        className: "input-full"
+      }), _react.default.createElement("label", null, "First Name"), _react.default.createElement("input", {
         type: "text",
         placeholder: "Last Name",
-        className: "input-half"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+        className: "input-full"
+      }), _react.default.createElement("label", null, "Last Name"), _react.default.createElement("input", {
         type: "email",
         placeholder: "Email Address",
         className: "input-full"
-      }))), _react.default.createElement("div", null, _react.default.createElement("label", null, _react.default.createElement("input", {
+      }), _react.default.createElement("label", null, "Email"), _react.default.createElement("input", {
         type: "password",
         placeholder: "Password",
         className: "input-full"
-      }))), _react.default.createElement("button", {
+      }), _react.default.createElement("label", null, "Password"), _react.default.createElement("button", {
         className: "Register-btn"
       }, "Register")))));
     }
@@ -32889,20 +32891,20 @@ var AboutUsPage = function AboutUsPage() {
   return _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: 250,
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
       backgroundImage: "url(".concat(_td.default, ")")
     }
   }, "about us"), _react.default.createElement("div", {
     style: {
-      display: "flex"
+      display: 'flex'
     }
   }, _react.default.createElement("aside", {
     style: {
-      width: "65%"
+      width: '65%'
     }
   }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Who are we?"), _react.default.createElement("div", null, _react.default.createElement("p", null, "The \"Cake Shop\" is a Jordanian Brand that started as a small family business."), _react.default.createElement("p", null, "The owners are Dr. Iyad Sultan and Dr. Sereen Sharabati, supported by a staff of 80 employees."), _react.default.createElement("p", null, "Although not small any more, the business tries to keep the family atmosphere where we care not only about our company, our products and our staff, but also we consider each \"customer\" a member in this family of \"cake shoppers\"."), _react.default.createElement("p", null, "Our mission is to make people happy. Making delicious cakes, having relaxing chairs in a smoking free environment and keeping our prices reasonable are all different ways to achieve this goal.")))), _react.default.createElement("main", null, _react.default.createElement("div", null, "something goes here"))));
 };
@@ -32927,47 +32929,47 @@ var ContactPage = function ContactPage() {
   return _react.default.createElement("div", null, _react.default.createElement("div", {
     style: {
       height: 250,
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
       backgroundImage: "url(".concat(_td.default, ")")
     }
   }, "contact us"), _react.default.createElement("div", {
     style: {
-      display: "flex"
+      display: 'flex'
     }
   }, _react.default.createElement("aside", {
     style: {
-      width: "65%"
+      width: '65%'
     }
   }, _react.default.createElement("div", null, _react.default.createElement("h1", null, "Contact Form"), _react.default.createElement("div", {
     style: {
-      display: "flex",
-      flexDirection: "column"
+      display: 'flex',
+      flexDirection: 'column'
     }
   }, _react.default.createElement("input", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     type: "text",
     placeholder: "Name *"
   }), _react.default.createElement("input", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     type: "text",
     placeholder: "Email *"
   }), _react.default.createElement("input", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     type: "text",
     placeholder: "Subject *"
   }), _react.default.createElement("textarea", {
     style: {
-      border: "1px solid black"
+      border: '1px solid black'
     },
     rows: "15",
     placeholder: "Message *"
@@ -32980,7 +32982,12 @@ var ContactPage = function ContactPage() {
 
 var _default = ContactPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../../assets/img/td.jpg":"../assets/img/td.jpg"}],"pages/CartCheckout-page.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../assets/img/td.jpg":"../assets/img/td.jpg"}],"pages/CartCheckout/CartCheckout.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"pages/CartCheckout/CartCheckout-page.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32990,15 +32997,102 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+require("./CartCheckout.scss");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var CartCheckoutPage = function CartCheckoutPage() {
-  return _react.default.createElement("div", null, "EMPTY CART");
+  return _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("div", {
+    className: "wrapper"
+  }, _react.default.createElement("div", {
+    className: "main-cart"
+  }, _react.default.createElement("div", {
+    className: "shop-text"
+  }, "Shopping Cart"), _react.default.createElement("div", {
+    className: "cart-item"
+  }, _react.default.createElement("div", {
+    className: "for-picture"
+  }, "circular picture"), _react.default.createElement("div", null, "Name of Item"), _react.default.createElement("div", null, _react.default.createElement("span", null, " - "), " ", _react.default.createElement("span", {
+    className: "quantity"
+  }, " 5 "), " ", _react.default.createElement("span", null, " + ")), _react.default.createElement("div", {
+    className: "price"
+  }, "$10.50"), _react.default.createElement("div", null, "x")), _react.default.createElement("div", {
+    className: "total"
+  }, _react.default.createElement("div", null, "--- continue shopping"), _react.default.createElement("div", null, "Subtotal: $24.90"))), _react.default.createElement("div", {
+    className: "checkout"
+  }, _react.default.createElement("div", {
+    className: "content"
+  }, _react.default.createElement("h3", null, "Card Details"), _react.default.createElement("div", {
+    className: "card-type"
+  }, "Card Type"), _react.default.createElement("div", null, _react.default.createElement("form", null, _react.default.createElement("label", {
+    "for": "name"
+  }, "Name on Card"), _react.default.createElement("input", {
+    id: "name",
+    type: "text",
+    required: true
+  }), _react.default.createElement("label", {
+    "for": "ccn"
+  }, "Credit Card Number:"), _react.default.createElement("input", {
+    id: "ccn",
+    type: "tel",
+    inputmode: "numeric",
+    pattern: "[0-9\\s]{13,19}",
+    autocomplete: "cc-number",
+    maxlength: "19",
+    placeholder: "xxxx xxxx xxxx xxxx"
+  }), _react.default.createElement("label", {
+    "for": "exp"
+  }, "Expiration Date"), _react.default.createElement("select", {
+    name: "expMonth"
+  }, _react.default.createElement("option", null, "- Month -"), _react.default.createElement("option", {
+    value: "January"
+  }, "January"), _react.default.createElement("option", {
+    value: "Febuary"
+  }, "Febuary"), _react.default.createElement("option", {
+    value: "March"
+  }, "March"), _react.default.createElement("option", {
+    value: "April"
+  }, "April"), _react.default.createElement("option", {
+    value: "May"
+  }, "May"), _react.default.createElement("option", {
+    value: "June"
+  }, "June"), _react.default.createElement("option", {
+    value: "July"
+  }, "July"), _react.default.createElement("option", {
+    value: "August"
+  }, "August"), _react.default.createElement("option", {
+    value: "September"
+  }, "September"), _react.default.createElement("option", {
+    value: "October"
+  }, "October"), _react.default.createElement("option", {
+    value: "November"
+  }, "November"), _react.default.createElement("option", {
+    value: "December"
+  }, "December")), _react.default.createElement("select", {
+    name: "expYear"
+  }, _react.default.createElement("option", null, "- Year -"), _react.default.createElement("option", {
+    value: "2020"
+  }, "2020"), _react.default.createElement("option", {
+    value: "2021"
+  }, "2021"), _react.default.createElement("option", {
+    value: "2022"
+  }, "2022"), _react.default.createElement("option", {
+    value: "2023"
+  }, "2023"), _react.default.createElement("option", {
+    value: "2024"
+  }, "2024"), _react.default.createElement("option", {
+    value: "2025"
+  }, "2025")), _react.default.createElement("input", {
+    value: "Check Out",
+    type: "submit"
+  })))))));
 };
 
 var _default = CartCheckoutPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"components/Images.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./CartCheckout.scss":"pages/CartCheckout/CartCheckout.scss"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -33098,7 +33192,7 @@ var _AboutusPage = _interopRequireDefault(require("../pages/Aboutus-page"));
 
 var _ContactPage = _interopRequireDefault(require("../pages/Contact-page"));
 
-var _CartCheckoutPage = _interopRequireDefault(require("../pages/CartCheckout-page"));
+var _CartCheckoutPage = _interopRequireDefault(require("../pages/CartCheckout/CartCheckout-page"));
 
 var _Header = _interopRequireDefault(require("../components/Header"));
 
@@ -33143,7 +33237,7 @@ function App() {
     component: _CartCheckoutPage.default
   })), _react.default.createElement(_Footer.default, null));
 }
-},{"react":"../node_modules/react/index.js","../pages/Product_page":"pages/Product_page.js","../pages/Landing-page":"pages/Landing-page.js","../pages/Signin-page":"pages/Signin-page.js","../pages/Register-page":"pages/Register-page.js","../pages/Aboutus-page":"pages/Aboutus-page.js","../pages/Contact-page":"pages/Contact-page.js","../pages/CartCheckout-page":"pages/CartCheckout-page.js","../components/Header":"components/Header.js","../components/Footer":"components/Footer.js","./Images":"components/Images.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"scss/app.scss":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../pages/Product_page":"pages/Product_page.js","../pages/Landing-page":"pages/Landing-page.js","../pages/Signin-page":"pages/Signin-page.js","../pages/Register-page":"pages/Register-page.js","../pages/Aboutus-page":"pages/Aboutus-page.js","../pages/Contact-page":"pages/Contact-page.js","../pages/CartCheckout/CartCheckout-page":"pages/CartCheckout/CartCheckout-page.js","../components/Header":"components/Header.js","../components/Footer":"components/Footer.js","./Images":"components/Images.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"scss/app.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -35650,7 +35744,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60529" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57076" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

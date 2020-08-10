@@ -6,29 +6,32 @@ export default function Header() {
     <div className="header__base">
       <header>
         <div className="brand">
-        <Link to="/">Foldables</Link>
+          <Link to="/">Foldables</Link>
         </div>
         <nav>
           <ul className="nav-list">
             <li className="nav-item">
-            <Link to="/aboutus">About Us</Link>
+              <Link to="/aboutus">About Us</Link>
             </li>
             <li className="nav-item">
-            <Link to="contact">Contact</Link>
+              <Link to="contact">Contact</Link>
             </li>
             <li className="nav-item">
               <Link to="products">Products</Link>
             </li>
             <li className="nav-item">
-            <Link to="signin">Sign In</Link>
+              <Link to="signin">Sign In</Link>
             </li>
             <li className="nav-item">
-            <Link to="cart">
+              <Link to="cart">
                 Cart <i class="fa fa-cart-arrow-down"></i>
               </Link>
             </li>
           </ul>
         </nav>
+        <div className="menu">
+          <i class="fa fa-bars"></i>
+        </div>
       </header>
     </div>
   );
