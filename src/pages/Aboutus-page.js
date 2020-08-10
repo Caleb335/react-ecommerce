@@ -1,17 +1,5 @@
 import React from 'react';
 
-<<<<<<< HEAD
-/*
-import other from '../../assets/img/other.jpg'
-import other1 from '../../assets/img/other1.jpg'
-import other3 from '../../assets/img/other3.jpg'
-import other4 from '../../assets/img/other4.jpg'
-
-import staff1 from '../../assets/img/staff1.jpeg'
-import staff2 from '../../assets/img/staff2.jpeg'
-import staff3 from '../../assets/img/staff3.jpeg'
-*/
-=======
 import other from '../../assets/img/other.jpg';
 import other1 from '../../assets/img/other1.jpg';
 import other3 from '../../assets/img/other3.jpg';
@@ -20,7 +8,6 @@ import other4 from '../../assets/img/other4.jpg';
 import staff1 from '../../assets/img/staff1.jpeg';
 import staff2 from '../../assets/img/staff2.jpeg';
 import staff3 from '../../assets/img/staff3.jpeg';
->>>>>>> 3ce839dcefb7418f9afa22842a5bdd08a3a0d3c3
 
 const AboutUsPage = () => {
   return (
