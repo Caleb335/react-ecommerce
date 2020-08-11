@@ -33063,6 +33063,8 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _reactRouterDom = require("react-router-dom");
+
 require("./CartCheckout.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -33076,69 +33078,140 @@ var CartCheckoutPage = function CartCheckoutPage() {
     className: "main-cart"
   }, _react.default.createElement("div", {
     className: "shop-text"
-  }, "Shopping Cart"), _react.default.createElement("div", {
+  }, _react.default.createElement("h3", null, "Shopping Cart")), _react.default.createElement("div", {
+    className: "cart-wrapper"
+  }, _react.default.createElement("div", {
     className: "cart-item"
   }, _react.default.createElement("div", {
     className: "for-picture"
-  }, "circular picture"), _react.default.createElement("div", null, "Name of Item"), _react.default.createElement("div", null, _react.default.createElement("span", null, " - "), " ", _react.default.createElement("span", {
+  }), _react.default.createElement("div", null, "Name of Item"), _react.default.createElement("div", {
+    className: "the-quantity"
+  }, _react.default.createElement("span", {
+    className: "mod-item"
+  }, " - "), " ", _react.default.createElement("span", {
+    className: "quantity"
+  }, " 5 "), " ", _react.default.createElement("span", {
+    className: "mod-item"
+  }, " + ")), _react.default.createElement("div", {
+    className: "price"
+  }, "$10.50"), _react.default.createElement("div", {
+    className: "mod-item cancel"
+  }, "x")), _react.default.createElement("div", {
+    className: "cart-item"
+  }, _react.default.createElement("div", {
+    className: "for-picture"
+  }), _react.default.createElement("div", null, "Name of Item"), _react.default.createElement("div", {
+    className: "the-quantity"
+  }, _react.default.createElement("span", null, " - "), " ", _react.default.createElement("span", {
     className: "quantity"
   }, " 5 "), " ", _react.default.createElement("span", null, " + ")), _react.default.createElement("div", {
     className: "price"
   }, "$10.50"), _react.default.createElement("div", null, "x")), _react.default.createElement("div", {
+    className: "cart-item"
+  }, _react.default.createElement("div", {
+    className: "for-picture"
+  }), _react.default.createElement("div", null, "Name of Item"), _react.default.createElement("div", {
+    className: "the-quantity"
+  }, _react.default.createElement("span", null, " - "), " ", _react.default.createElement("span", {
+    className: "quantity"
+  }, " 5 "), " ", _react.default.createElement("span", null, " + ")), _react.default.createElement("div", {
+    className: "price"
+  }, "$10.50"), _react.default.createElement("div", null, "x")), _react.default.createElement("div", {
+    className: "cart-item"
+  }, _react.default.createElement("div", {
+    className: "for-picture"
+  }), _react.default.createElement("div", null, "Name of Item"), _react.default.createElement("div", {
+    className: "the-quantity"
+  }, _react.default.createElement("span", null, " - "), " ", _react.default.createElement("span", {
+    className: "quantity"
+  }, " 5 "), " ", _react.default.createElement("span", null, " + ")), _react.default.createElement("div", {
+    className: "price"
+  }, "$10.50"), _react.default.createElement("div", null, "x"))), _react.default.createElement("div", {
     className: "total"
-  }, _react.default.createElement("div", null, "--- continue shopping"), _react.default.createElement("div", null, "Subtotal: $24.90"))), _react.default.createElement("div", {
+  }, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Link, {
+    className: "goback",
+    to: "./products"
+  }, " \u2190 Continue Shopping")), _react.default.createElement("div", null, _react.default.createElement("span", {
+    style: {
+      color: "#8d8f97"
+    }
+  }, "Subtotal: "), "$24.90"))), _react.default.createElement("div", {
     className: "checkout"
   }, _react.default.createElement("div", {
     className: "content"
-  }, _react.default.createElement("h3", null, "Card Details"), _react.default.createElement("div", {
+  }, _react.default.createElement("h3", {
+    className: "card-details"
+  }, "Card Details"), _react.default.createElement("div", {
     className: "card-type"
-  }, "Card Type"), _react.default.createElement("div", null, _react.default.createElement("form", null, _react.default.createElement("label", {
+  }, _react.default.createElement("p", {
+    className: "card-type-text"
+  }, "Card Type"), _react.default.createElement("div", {
+    className: "card-design"
+  }, _react.default.createElement("div", {
+    className: "smart-card"
+  }), _react.default.createElement("div", {
+    className: "mastercard"
+  }))), _react.default.createElement("div", null, _react.default.createElement("form", null, _react.default.createElement("label", {
+    className: "card-type-text",
     "for": "name"
   }, "Name on Card"), _react.default.createElement("input", {
+    className: "credit-card",
     id: "name",
+    placeholder: "CIROMA ADEKUNLE CHUKWUMA",
     type: "text",
     required: true
   }), _react.default.createElement("label", {
+    className: "card-type-text",
     "for": "ccn"
   }, "Credit Card Number:"), _react.default.createElement("input", {
+    className: "credit-card",
     id: "ccn",
     type: "tel",
     inputmode: "numeric",
     pattern: "[0-9\\s]{13,19}",
     autocomplete: "cc-number",
     maxlength: "19",
-    placeholder: "xxxx xxxx xxxx xxxx"
-  }), _react.default.createElement("label", {
+    placeholder: "**** **** **** ****"
+  }), _react.default.createElement("div", {
+    className: "expcvv"
+  }, _react.default.createElement("div", {
+    className: "expc"
+  }, _react.default.createElement("label", {
+    className: "card-type-text",
     "for": "exp"
-  }, "Expiration Date"), _react.default.createElement("select", {
+  }, "Expiration Date"), _react.default.createElement("div", {
+    className: "mmyywrap"
+  }, _react.default.createElement("select", {
+    className: "credit-card expp",
     name: "expMonth"
-  }, _react.default.createElement("option", null, "- Month -"), _react.default.createElement("option", {
+  }, _react.default.createElement("option", null, " mm "), _react.default.createElement("option", {
     value: "January"
-  }, "January"), _react.default.createElement("option", {
+  }, "01"), _react.default.createElement("option", {
     value: "Febuary"
-  }, "Febuary"), _react.default.createElement("option", {
+  }, "02"), _react.default.createElement("option", {
     value: "March"
-  }, "March"), _react.default.createElement("option", {
+  }, "03"), _react.default.createElement("option", {
     value: "April"
-  }, "April"), _react.default.createElement("option", {
+  }, "04"), _react.default.createElement("option", {
     value: "May"
-  }, "May"), _react.default.createElement("option", {
+  }, "05"), _react.default.createElement("option", {
     value: "June"
-  }, "June"), _react.default.createElement("option", {
+  }, "06"), _react.default.createElement("option", {
     value: "July"
-  }, "July"), _react.default.createElement("option", {
+  }, "07"), _react.default.createElement("option", {
     value: "August"
-  }, "August"), _react.default.createElement("option", {
+  }, "08"), _react.default.createElement("option", {
     value: "September"
-  }, "September"), _react.default.createElement("option", {
+  }, "09"), _react.default.createElement("option", {
     value: "October"
-  }, "October"), _react.default.createElement("option", {
+  }, "10"), _react.default.createElement("option", {
     value: "November"
-  }, "November"), _react.default.createElement("option", {
+  }, "11"), _react.default.createElement("option", {
     value: "December"
-  }, "December")), _react.default.createElement("select", {
+  }, "12")), _react.default.createElement("select", {
+    className: "credit-card expp",
     name: "expYear"
-  }, _react.default.createElement("option", null, "- Year -"), _react.default.createElement("option", {
+  }, _react.default.createElement("option", null, "yyyy"), _react.default.createElement("option", {
     value: "2020"
   }, "2020"), _react.default.createElement("option", {
     value: "2021"
@@ -33150,7 +33223,19 @@ var CartCheckoutPage = function CartCheckoutPage() {
     value: "2024"
   }, "2024"), _react.default.createElement("option", {
     value: "2025"
-  }, "2025")), _react.default.createElement("input", {
+  }, "2025")))), _react.default.createElement("div", {
+    className: "pcvv"
+  }, _react.default.createElement("label", {
+    className: "card-type-text",
+    "for": "cvv"
+  }, "CVV"), _react.default.createElement("input", {
+    className: "credit-card cvv",
+    id: "name",
+    placeholder: "XXX",
+    type: "text",
+    required: true
+  }))), _react.default.createElement("input", {
+    className: "checkout-btn",
     value: "Check Out",
     type: "submit"
   })))))));
@@ -33158,7 +33243,7 @@ var CartCheckoutPage = function CartCheckoutPage() {
 
 var _default = CartCheckoutPage;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./CartCheckout.scss":"pages/CartCheckout/CartCheckout.scss"}],"components/Images.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./CartCheckout.scss":"pages/CartCheckout/CartCheckout.scss"}],"components/Images.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35810,7 +35895,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62830" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63363" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

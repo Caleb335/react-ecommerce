@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './CartCheckout.scss'
 
 const CartCheckoutPage = () => {
@@ -7,32 +8,87 @@ const CartCheckoutPage = () => {
       <div className='wrapper'>
         <div className='main-cart'>
           <div className='shop-text'>
-            Shopping Cart
+            <h3>Shopping Cart</h3>
           </div>
-          <div className='cart-item'>
-            <div className='for-picture'>
-              circular picture
+          <div className='cart-wrapper'>
+            <div className='cart-item'>
+              <div className='for-picture'>
+                
+              </div>
+              <div>
+                Name of Item
+              </div>
+              <div className='the-quantity'>
+                <span className='mod-item'> - </span> <span className='quantity'> 5 </span> <span  className='mod-item'> + </span>
+              </div>
+              <div className='price'>
+                $10.50
+              </div>
+              <div className='mod-item cancel'>
+                x
+              </div>
             </div>
-            <div>
-              Name of Item
+            <div className='cart-item'>
+              <div className='for-picture'>
+                
+              </div>
+              <div>
+                Name of Item
+              </div>
+              <div className='the-quantity'>
+                <span> - </span> <span className='quantity'> 5 </span> <span> + </span>
+              </div>
+              <div className='price'>
+                $10.50
+              </div>
+              <div>
+                x
+              </div>
             </div>
-            <div>
-              <span> - </span> <span className='quantity'> 5 </span> <span> + </span>
-            </div>
-            <div className='price'>
-              $10.50
-            </div>
-            <div>
-              x
-            </div>
-          </div>
 
+            <div className='cart-item'>
+              <div className='for-picture'>
+                
+              </div>
+              <div>
+                Name of Item
+              </div>
+              <div className='the-quantity'>
+                <span> - </span> <span className='quantity'> 5 </span> <span> + </span>
+              </div>
+              <div className='price'>
+                $10.50
+              </div>
+              <div>
+                x
+              </div>
+            </div>
+
+            <div className='cart-item'>
+              <div className='for-picture'>
+                
+              </div>
+              <div>
+                Name of Item
+              </div>
+              <div className='the-quantity'>
+                <span> - </span> <span className='quantity'> 5 </span> <span> + </span>
+              </div>
+              <div className='price'>
+                $10.50
+              </div>
+              <div>
+                x
+              </div>
+            </div>
+
+          </div>       
           <div className='total'>
             <div>
-              --- continue shopping
+              <Link className='goback' to = './products'> &larr; Continue Shopping</Link>
             </div>
             <div>
-              Subtotal: $24.90 
+              <span style={{color: "#8d8f97"}}>Subtotal: </span>$24.90 
             </div>
 
           </div>
@@ -40,46 +96,65 @@ const CartCheckoutPage = () => {
         </div>
         <div className='checkout'>
           <div className='content'>
-            <h3>Card Details</h3>
+            <h3 className='card-details'>Card Details</h3>
             <div className='card-type'>
-              Card Type
+              <p className='card-type-text'>Card Type</p>
+              <div className='card-design'>
+                <div className='smart-card'>
+                  
+                </div>
+                <div className='mastercard'>
+
+                </div>
+              </div>
             </div>
             <div>
               <form>
-                <label for='name'>Name on Card</label>
-                <input id='name' type='text'required/>
+                <label className='card-type-text' for='name'>Name on Card</label>
+                <input className='credit-card' id='name' placeholder='CIROMA ADEKUNLE CHUKWUMA' type='text'required/>
 
-                <label for="ccn">Credit Card Number:</label>
-                <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></input>
+                <label className='card-type-text' for="ccn">Credit Card Number:</label>
+                <input className='credit-card' id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="**** **** **** ****"></input>
               
-                <label for='exp'>Expiration Date</label>
-                <select name='expMonth'>
-                  <option>- Month -</option>
-                    <option value="January">January</option>
-                    <option value="Febuary">Febuary</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                </select>
+                <div className='expcvv'>
+                  <div className='expc'>
+                    <label className='card-type-text' for='exp'>Expiration Date</label>
+                    <div className='mmyywrap'>
+                      <select className='credit-card expp' name='expMonth'>
+                        <option> mm </option>
+                          <option value="January">01</option>
+                          <option value="Febuary">02</option>
+                          <option value="March">03</option>
+                          <option value="April">04</option>
+                          <option value="May">05</option>
+                          <option value="June">06</option>
+                          <option value="July">07</option>
+                          <option value="August">08</option>
+                          <option value="September">09</option>
+                          <option value="October">10</option>
+                          <option value="November">11</option>
+                          <option value="December">12</option>
+                      </select>
 
-                <select name="expYear">
-                  <option>- Year -</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                </select>
+                      <select className='credit-card expp' name="expYear">
+                        <option>yyyy</option>
+                          <option value="2020">2020</option>
+                          <option value="2021">2021</option>
+                          <option value="2022">2022</option>
+                          <option value="2023">2023</option>
+                          <option value="2024">2024</option>
+                          <option value="2025">2025</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className='pcvv'>
+                    <label className='card-type-text' for='cvv'>CVV</label>
+                    <input className='credit-card cvv' id='name' placeholder='XXX' type='text' required/>
+                  </div>
+                </div>
 
-                <input value='Check Out' type='submit'/>
+
+                <input className='checkout-btn' value='Check Out' type='submit'/>
               </form>
             </div>
           </div>

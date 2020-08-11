@@ -1,32 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
-
-*{
-    font-family: Montserrat;
-}
-
 
 .container {
     background-color: #e5e6ea;
     border-radius: 5px;
-    border: 2px solid red;
+    // border: 2px solid red;
 
     .wrapper {
-        background-color: #f5f6f6;
+        background-color: #f6f6f6;
         display: flex;
         align-items: center;
-        border: 2px solid blue;
+        // border: 2px solid blue;
         max-width: 90%;
         height: 700px;
-        margin: 100px auto;
+        margin: 0 auto;
 
         .main-cart {
             width: 65%;
             height: 85%;
             padding: 5%;
-            border: 2px solid black;
+            // border: 2px solid black;
 
             .shop-text {
                 margin-bottom: 20px;
+            }
+
+            .cart-wrapper{
+                // border: 1px solid lawngreen;
+                height: 450px; 
+                overflow: scroll;
             }
 
             .cart-item {
@@ -34,14 +34,42 @@
                 height: 150px;
                 width: 100%;
                 align-items: center;
-                justify-content: space-around;
-                border: 2px solid yellow;
+                justify-content: space-between;
+                // border: 2px solid yellow;
+                font-size: 20px;
 
                 .for-picture {
                     height: 120px;
                     width: 120px;
-                    background-color: green;
+                    background-color: #8d8f97;
                     border-radius: 50%;
+                }
+
+                .mod-item {
+                    cursor: pointer;
+                }
+
+                .cancel {
+                    margin-right: 5px;
+                }
+
+
+                .the-quantity {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 1fr;
+                    grid-gap: 5px;
+
+
+                    .quantity {
+                        border-radius: 3px;
+                        border: 1px solid grey;
+                        color: grey;
+                        // display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // width: 10px;
+                        padding-left: 4px;
+                    }
                 }
 
             }
@@ -49,6 +77,11 @@
             .total {
                 display: flex;
                 justify-content: space-between;
+
+                .goback{
+                    text-decoration: none;
+                    color: #2d7aee;
+                }
             }
 
         }
@@ -58,7 +91,7 @@
             background-color: #41434b;
             border-radius: 5px;
             height: 90%;
-            width:35%;
+            width:30%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -68,13 +101,80 @@
             .content {
                 height: 85%;
                 width: 85%;
-                border: 2px solid firebrick;
+                // border: 2px solid firebrick;
+
+                .card-type-text {
+                    color: #8d8f97;
+                    font-size: 12px;    
+                }
+
+
+                .credit-card {
+                    background-color: transparent;
+                    border-bottom: 1px solid #8d8f97;
+                    border-radius: 0;
+                    width: 95%;
+                    outline: none;
+                    margin: 3.5px auto;
+                    color: white;
+                    padding-left: 0;
+
+                    &::placeholder{
+                        color: white;
+                    }
+                }
+
+                .expcvv {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 95%;
+                    margin-top: 5px;
+
+                    .mmyywrap {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .expc {
+                        width: 65%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;;
+
+
+                        .expp {
+                            border: none;
+                            height: 40px;
+                            width: 40%;
+                            margin: 3.5px 0;
+                            border-bottom: 1px solid #8d8f97;
+                        }
+                    }
+
+                    .pcvv {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 30%
+                    }
+                    
+                }
 
                 .card-type {
                     height: 200px;
-                    border: 1px solid saddlebrown;
+                    // border: 1px solid saddlebrown;
+                    margin-top: 25px;
+
                 }
             }
+        }
+
+        .checkout-btn {
+            background-color: #2d7aee;
+            margin-top: 50px;
+            width: 100%;
+            border-radius: 0;
+            color: white
         }
     }
 }
