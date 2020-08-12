@@ -1,18 +1,18 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .Register {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: .5rem; // 1rem == 16px(default html font size if not manually changed)
+  grid-column-gap: 0.5rem; // 1rem == 16px(default html font size if not manually changed)
 
-  background: linear-gradient(rgba(#000, .25), rgba(#000, .2)),
-    url('../../assets/img/cakes/cup/cup3.jpg') center no-repeat;
+  background: linear-gradient(rgba(#000, 0.25), rgba(#000, 0.2)),
+    url("../../assets/img/cakes/cup/cup3.jpg") center no-repeat;
   background-size: cover;
   background-position: top;
 
-  color: rgba(#fff, 1.0);
+  color: rgba(#fff, 1);
 
   padding-top: 100px;
 
@@ -47,14 +47,14 @@
       a,
       a:link,
       a:visited {
-        padding: .2rem;
+        padding: 0.2rem;
         text-decoration: none;
         color: currentColor;
         position: relative;
 
         &::after {
           display: block;
-          content: '';
+          content: "";
           position: absolute;
           bottom: 0;
           left: 0;
@@ -63,8 +63,12 @@
           background-color: $pinkish;
           border-radius: 3px;
 
+<<<<<<< HEAD
           transition: all .5s;
 
+=======
+          transition: all 0.5s;
+>>>>>>> 24187d4ab60eb022ec5fdfa1ab0cfea51d00fe85
         }
 
         &:focus {

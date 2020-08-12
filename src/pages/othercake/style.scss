@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .landing-body {
   width: 100%;
@@ -162,8 +162,6 @@ img.product {
   }
 }
 
-
-
 /*
 .header-intro {
   display: flex;
@@ -203,16 +201,17 @@ img.product {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(#fff, .5), rgba(#fff, .5)),
+  background-image: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)),
     url(../../assets/img/hero/hero4.jpg);
   background-position: center;
   background-size: cover;
 
   // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 
-  &-text {}
+  &-text {
+  }
 }
 
-.link{
+.link {
   text-decoration: none;
 }

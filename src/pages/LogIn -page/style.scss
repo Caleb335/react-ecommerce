@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 
 .cta-text {
   font-size: 1.1rem;
@@ -15,7 +15,7 @@
 
     &::after {
       display: block;
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       left: 0;
