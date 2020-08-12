@@ -89,6 +89,8 @@ img.product {
   width: 250px;
   margin-top: 10px;
   border-radius: 5px;
+
+  object-fit: cover;
 }
 
 .modal {
@@ -213,6 +215,6 @@ img.product {
   &-text {}
 }
 
-.link{
+.link {
   text-decoration: none;
 }
