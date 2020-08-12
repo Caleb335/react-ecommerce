@@ -14,6 +14,8 @@
 
   color: rgba(#fff, 1.0);
 
+  padding-top: 100px;
+
   &-image {
     grid-column: 1/2;
     height: 100%;
@@ -59,9 +61,16 @@
           height: 2px;
           width: 100%;
           background-color: $pinkish;
+          border-radius: 3px;
 
           transition: all .5s;
+
         }
+
+        &:focus {
+          outline: none;
+        }
+
 
         &:hover {
           z-index: 10;

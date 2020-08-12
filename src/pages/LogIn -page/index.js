@@ -5,35 +5,34 @@ import Form from '../../components/form/index';
 import FormInput from '../../components/formInput/index';
 import Button from '../../components/button';
 import { auth, signInWithGoogle } from '../../firebase/utils';
-import GoogleButton from 'react-google-button'
+import GoogleButton from 'react-google-button';
+import g from '../../assets/img/hero/g.png';
 class Login extends Component {
-
   state = {
     email: '',
-    password: ''
-  }
-  handleSubmit = async (event) => {
+    password: '',
+  };
+  handleSubmit = async event => {
     event.preventDefault();
     const { email, password } = this.state;
     try {
       await auth.signInWithEmailAndPassword(email, password);
-      alert('signed in succesfully')
+      alert('signed in succesfully');
       this.setState({
         email: '',
-        password: ''
+        password: '',
       });
     } catch (error) {
       alert(error.message);
     }
+  };
 
-  }
-
-  handleChange = (event) => {
+  handleChange = event => {
     const { name, value } = event.target;
     this.setState({
-      [name]: value
+      [name]: value,
     });
-  }
+  };
   render() {
     const { email, password } = this.state;
     return (
@@ -52,37 +51,28 @@ class Login extends Component {
             </span>
           </p>
           <Form onSubmit={this.handleSubmit}>
-            <FormInput
-              type='email'
-              placeholder='Email'
-              label='Email'
-              value={email}
-              name="email"
-              required
-
-              onChange={this.handleChange} />
+            <FormInput type='email' placeholder='Email' label='Email' value={email} name='email' required onChange={this.handleChange} />
             <FormInput
               type='password'
               placeholder='Password'
               label='Password'
-              name="password"
+              name='password'
               value={password}
               onChange={this.handleChange}
-              required />
-            <div className="btn-wrapper">
+              required
+            />
+            <div className='btn-wrapper'>
               <Button type='submit' placeholder='Sign In' />
-              <GoogleButton
-                className="google-btn"
-                type="dark"
-                onClick={signInWithGoogle}
-              />
+              <Button className='google' type='button' placeholder='Sign In with google' onClick={signInWithGoogle}>
+                <img className='google-img' src={g} />
+              </Button>
             </div>
           </Form>
           <h4 className='cta-text'>
             Don't have an account yet?<Link to='/register'> Sign Up! </Link>
           </h4>
         </div>
-      </div >
+      </div>
     );
   }
 }

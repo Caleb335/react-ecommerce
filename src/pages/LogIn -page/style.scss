@@ -22,7 +22,7 @@
       height: 2px;
       width: 100%;
       background-color: $pinkish;
-
+      border-radius: 3px;
       transition: all 0.5s;
     }
 
@@ -37,25 +37,12 @@
   }
 }
 
+a:focus {
+  outline: none;
+}
+
 .btn-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .google-btn {
-    margin-top: 32px;
-    margin-bottom: 10px;
-    width: 100px;
-    height: 20px;
-    line-height: 14px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
-    border-radius: 5px;
-
-    &:active {
-      transform: translateY(4px);
-    }
-  }
 }

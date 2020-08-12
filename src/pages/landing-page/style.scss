@@ -89,6 +89,8 @@ img.product {
   width: 250px;
   margin-top: 10px;
   border-radius: 5px;
+
+  object-fit: cover;
 }
 
 .modal {
@@ -162,45 +164,6 @@ img.product {
   }
 }
 
-/*
-.header-intro {
-  display: flex;
-  justify-content: space-around;
-  background: $bg-primary;
-}
-
-.text-cta {
-  width: 550px;
-  height: 260px;
-  margin-top: 12%;
-
-  & h2 {
-    font-size: 39px;
-  }
-
-  & p {
-    font-size: 18px;
-    margin-top: 3%;
-  }
-}
-
-.img-intro {
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-}
-
-.image-cta {
-  height: 580px;
-  width: 580px;
-  border: 3px solid $pinkish;
-  border-radius: 50%;
-  padding: 35px;
-  margin-top: 2%;
-}
-
-// header section ends here
-*/
 .header {
   height: 95vh;
   display: flex;
@@ -214,5 +177,4 @@ img.product {
 
   // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 
-  //&-text {}
 }
