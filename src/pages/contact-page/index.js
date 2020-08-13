@@ -18,8 +18,8 @@ const ContactPage = () => {
       >
         contact us
       </div>
-      <div style={{ display: 'flex' }}>
-        <aside style={{ width: '65%' }}>
+      <div className='contain'>
+        <aside className='containerBody'>
           <div className='formContainer'>
             <h1>Leave a Message</h1>
             <div className='contactForm'>
@@ -38,7 +38,7 @@ const ContactPage = () => {
             </div>
           </div>
         </aside>
-        <main>
+        <main className='containerBody2'>
           <div className='formContainer'>
             <h1>Contact Details</h1>
             <div>
