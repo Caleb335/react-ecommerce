@@ -43,7 +43,7 @@ const ProductPage = () => {
                         <div className=" column col-lg-3 col-md-4 col-sm-6"  style={{borderRadius: "50%"}}>
                             <div className="card text-center shadow-lg " style={{marginTop: "25px", marginBottom: "25px", borderRadius: "5%"}}>
                                 <div className='px-5 pt-5'>
-                                    <img src={birthday}  className="card-img-top img-fluid"/>
+                                    <img src={birthday}  className="card-img-top img-fluid" alt=""/>
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 1</h1>
@@ -55,7 +55,7 @@ const ProductPage = () => {
                         <div className=" column col-lg-3 col-md-4 col-sm-6"  style={{borderRadius: "50%"}}>
                             <div className="card text-center shadow-lg " style={{marginTop: "25px", marginBottom: "25px", borderRadius: "5%"}}>
                                 <div className='px-5 pt-5'>
-                                    <img src={birthday1}  className="card-img-top img-fluid"/>
+                                    <img src={birthday1}  className="card-img-top img-fluid" alt=""/>
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 2</h1>
@@ -68,7 +68,7 @@ const ProductPage = () => {
                         <div className=" column col-lg-3 col-md-4 col-sm-6"  style={{borderRadius: "50%"}}>
                             <div className="card text-center shadow-lg " style={{marginTop: "25px", marginBottom: "25px", borderRadius: "5%"}}>
                                 <div className='px-5 pt-5'>
-                                    <img src={birthday2}  className="card-img-top img-fluid"/>
+                                    <img src={birthday2}  className="card-img-top img-fluid" alt=""/>
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 3</h1>
@@ -81,7 +81,7 @@ const ProductPage = () => {
                         <div className=" column col-lg-3 col-md-4 col-sm-6"  style={{borderRadius: "50%"}}>
                             <div className="card text-center shadow-lg " style={{marginTop: "25px", marginBottom: "25px", borderRadius: "5%"}}>
                                 <div className='px-5 pt-5'>
-                                    <img src={birthday3}  className="card-img-top img-fluid"/>
+                                    <img src={birthday3}  className="card-img-top img-fluid" alt=""/>
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 4</h1>
@@ -94,7 +94,7 @@ const ProductPage = () => {
                         <div className=" column col-lg-3 col-md-4 col-sm-6"  style={{borderRadius: "50%"}}>
                             <div className="card text-center shadow-lg " style={{marginTop: "25px", marginBottom: "25px", borderRadius: "5%"}}>
                                 <div className='px-5 pt-5'>
-                                    <img src={birthday4}  className="card-img-top img-fluid"/>
+                                    <img src={birthday4}  className="card-img-top img-fluid" alt=""/>
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 5</h1>
@@ -107,7 +107,7 @@ const ProductPage = () => {
                         <div className=" column col-lg-3 col-md-4 col-sm-6"  style={{borderRadius: "50%"}}>
                             <div className="card text-center shadow-lg " style={{marginTop: "25px", marginBottom: "25px", borderRadius: "5%"}}>
                                 <div className='px-5 pt-5'>
-                                    <img src={birthday5}  className="card-img-top img-fluid"/>
+                                    <img src={birthday5}  className="card-img-top img-fluid" alt=""/>
                                 </div>
                                 <div className="card-body">
                                     <h1 className="card-title">cake 6</h1>
