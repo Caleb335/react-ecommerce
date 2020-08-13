@@ -15,13 +15,12 @@ const Header = ({ currentUser, cartQuantity }) => {
         <div
           className='hbg'
           onClick={e => {
-            console.log(e.target.nextElementSibling);
             e.target.nextElementSibling.style.visibility === 'hidden'
               ? (e.target.nextElementSibling.style.visibility = 'visible')
               : (e.target.nextElementSibling.style.visibility = 'hidden');
-            e.target.nextElementSibling.style.opacity === '0' || 0
-              ? (e.target.nextElementSibling.style.opacity = 1)
-              : (e.target.nextElementSibling.style.opacity = 0);
+            e.target.nextElementSibling.style.opacity === '0'
+              ? (e.target.nextElementSibling.style.opacity = '1')
+              : (e.target.nextElementSibling.style.opacity = '0');
           }}
         >
           <span></span>
