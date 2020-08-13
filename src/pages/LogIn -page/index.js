@@ -63,7 +63,7 @@ class Login extends Component {
             <div className='btn-wrapper'>
               <Button type='submit' placeholder='Sign In' />
               <Button className='google' type='button' placeholder='Sign In with google' onClick={signInWithGoogle}>
-                <img className='google-img' src={g} alt="" />
+                <img className='google-img' src={g} alt='' />
               </Button>
             </div>
           </Form>
