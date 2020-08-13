@@ -16,8 +16,8 @@ const ProductPage = () => {
         <div className='row'>
           <h2>Birthday Cakes</h2>
 
-          {/* instead of hard coding the ui of multiple cake cards you can use the
-           * javascrip map method to represent the UI
+          {/* instead of hard coding the UI of multiple cake cards you can use the
+           * javascript map method to represent the UI
            * It saves you the stress of having to copy and paste on multiple lines
            * therefore, making our code shorter and cleaner.
            */}
@@ -25,7 +25,7 @@ const ProductPage = () => {
           {birthdayCakes.map(birthdayCake => {
             return (
               <div key={birthdayCake.id} birthdayCake={birthdayCake}>
-                <div className=' column col-lg-3 col-md-4 col-sm-6' style={{ borderRadius: '50%' }}>
+                <div className=' column col-lg-3 col-md-4 col-sm-6 shadow' style={{ borderRadius: '50%' }}>
                   <div className='card text-center shadow-lg ' style={{ marginTop: '25px', marginBottom: '25px', borderRadius: '5%' }}>
                     <div className='px-5 pt-5'>
                       <img src={birthdayCake.imageUrl} className='card-img-top img-fluid' alt='birthday cake' />
