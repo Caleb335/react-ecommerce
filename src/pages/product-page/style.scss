@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .column {
   float: left;
   width: 28%;
@@ -27,6 +29,7 @@ h1.card-title {
 }
 .product_page {
   padding: 2em;
+  margin-top: 2%;
 }
 
 .banner {
