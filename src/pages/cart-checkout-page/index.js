@@ -1,15 +1,38 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { clearItemFromCart } from '../../Redux/Cart/CartActions';
+import { PaystackButton } from 'react-paystack';
+
 import './style.scss';
 import CheckoutItem from '../../components/CheckoutItem/CheckoutItem';
 
 const CartCheckoutPage = props => {
-  const [cardName, setCardName] = useState('');
-  const [cardNumber, setCardNumber] = useState('');
-  const [expiryMonth, setExpiryMonth] = useState('');
-  const [expiryYear, setExpiryYear] = useState('');
-  const [cardSecretNum, setCardSecretNum] = useState('');
+  const publicKey = 'pk_test_229c380a24cd09ddd6965f020ee67af6356f356d';
+  const amount = props.cartTotalPrice * 100 * 450; // Remember, set in kobo!
+  const [name, setCardName] = useState('');
+  const [phone, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
+
+  const componentProps = {
+    email,
+    amount,
+    metadata: {
+      name,
+      phone
+    },
+    publicKey,
+    text: 'Pay Now With Paystack',
+    onSuccess: () => {
+      for (let oneItem of cartItems) {
+        props.dispatch(clearItemFromCart(oneItem));
+      }
+    },
+
+    onClose: () => {
+      alert('guy you no for like buy cake?');
+    }
+  };
 
   const { cartItems, cartTotalPrice } = props;
   return (
@@ -36,7 +59,9 @@ const CartCheckoutPage = props => {
               </Link>
             </div>
             <div>
-              <span style={{ color: '#8d8f97' }}>Subtotal: </span>${cartTotalPrice}.00
+              <span style={{ color: '#8d8f97' }}>Subtotal: </span>${cartTotalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}.00 <br />
+              <span style={{ color: '#8d8f97' }}>Subtotal: </span>₦{(amount / 100).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')}.00 at a rate of
+              ₦400 = $1
             </div>
           </div>
         </div>
@@ -49,8 +74,7 @@ const CartCheckoutPage = props => {
                 <div className='smart-card'>
                   <div className='card-details'>
                     <span style={{ fontSize: 24 }}>VISA</span>
-                    <input placeholder='**** **** **** ****' value={cardNumber} />
-                    <input style={{ fontSize: 12, width: 'auto' }} placeholder='**** **** **** ****' value={cardNumber} />
+                    <span>4242 4242 4242 4242</span>
                     <div
                       style={{
                         display: 'flex',
@@ -58,103 +82,62 @@ const CartCheckoutPage = props => {
                       }}
                       className='flex-details'
                     >
-                      <input placeholder='CIROMA ADEKUNLE CHUKWUMA' value={cardName} />
-                      <span>{`${expiryMonth} / ${expiryYear}`}</span>
-                      <input style={{ fontSize: 12 }} placeholder='CIROMA ADEKUNLE CHUKWUMA' value={cardName} />
-                      <span
-                        style={{ width: 70, fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                      >{`${expiryMonth} / ${expiryYear}`}</span>
+                      <input style={{ fontSize: 16 }} placeholder='CIROMA ADEKUNLE CHUKWUMA' value={name.toUpperCase()} />
+                      {/* <span>CIROMA ADEKUNLE CHUKWUMA</span> */}
+                      <span style={{ width: 70, fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>06 / 24</span>
                     </div>
                   </div>
                 </div>
                 <div className='mastercard'>
-                  <i class='mastercard-icon'></i>
+                  <i className='mastercard-icon'></i>
                   <span>mastercard</span>
                 </div>
               </div>
             </div>
             <div>
               <form>
-                <label className='card-type-text' for='name'>
+                <label className='card-type-text' htmlFor='name'>
                   Name on Card
                 </label>
                 <input
                   className='credit-card'
                   id='name'
-                  value={cardName}
+                  value={name}
                   onChange={e => setCardName(e.target.value)}
                   placeholder='CIROMA ADEKUNLE CHUKWUMA'
                   type='text'
                   required
                 />
 
-                <label className='card-type-text' for='ccn'>
-                  Credit Card Number:
+                <label className='card-type-text' htmlFor='ccn'>
+                  Phone Number:
                 </label>
                 <input
                   className='credit-card'
                   id='ccn'
-                  value={cardNumber}
-                  onChange={e => setCardNumber(e.target.value)}
+                  value={phone}
+                  onChange={e => setPhoneNumber(e.target.value)}
                   type='tel'
-                  inputmode='numeric'
-                  pattern='[0-9\s]{13,19}'
-                  autocomplete='cc-number'
-                  maxlength='19'
-                  placeholder='**** **** **** ****'
+                  inputMode='numeric'
+                  maxLength='11'
+                  placeholder='080F OLD ABLES'
                 ></input>
 
-                <div className='expcvv'>
-                  <div className='expc'>
-                    <label className='card-type-text' for='exp'>
-                      Expiration Date
-                    </label>
-                    <div className='mmyywrap'>
-                      <select className='credit-card expp' name='expMonth' value={expiryMonth} onChange={e => setExpiryMonth(e.target.value)}>
-                        <option> mm </option>
-                        <option value='01'>Jan</option>
-                        <option value='02'>Feb</option>
-                        <option value='03'>Mar</option>
-                        <option value='04'>Apr</option>
-                        <option value='05'>May</option>
-                        <option value='06'>Jun</option>
-                        <option value='07'>Jul</option>
-                        <option value='08'>Aug</option>
-                        <option value='09'>Sept</option>
-                        <option value='10'>Oct</option>
-                        <option value='11'>Nov</option>
-                        <option value='12'>Dec</option>
-                      </select>
+                <label className='card-type-text' htmlFor='ccn'>
+                  Email Address:
+                </label>
+                <input
+                  className='credit-card'
+                  id='ccn'
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  type='email'
+                  placeholder='buycakes@foldables.com'
+                ></input>
 
-                      <select className='credit-card expp' name='expYear' value={expiryYear} onChange={e => setExpiryYear(e.target.value)}>
-                        <option>yyyy</option>
-                        <option value='20'>2020</option>
-                        <option value='21'>2021</option>
-                        <option value='22'>2022</option>
-                        <option value='23'>2023</option>
-                        <option value='24'>2024</option>
-                        <option value='25'>2025</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className='pcvv'>
-                    <label className='card-type-text' for='cvv'>
-                      CVV
-                    </label>
-                    <input
-                      className='credit-card cvv'
-                      value={cardSecretNum}
-                      onChange={e => setCardSecretNum(e.target.value)}
-                      id='name'
-                      placeholder='XXX'
-                      type='text'
-                      required
-                    />
-                  </div>
-                </div>
-
-                <input className='checkout-btn' value='Check Out' type='submit' />
+                {/* <input className='checkout-btn' value='Check Out' type='submit' /> */}
               </form>
+              <PaystackButton className='checkout-btn' {...componentProps} />
             </div>
           </div>
         </div>
