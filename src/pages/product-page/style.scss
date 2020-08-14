@@ -63,26 +63,48 @@ img {
 }
 
 //Media Queries
-@media (min-width: 1024px) {
+@media (max-width: 576px) {
   header {
     display: flex;
   }
 
   .banner {
-    margin: 0 5rem;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    margin-top: 9%;
+    border-radius: 20px;
 
     p {
-      margin-top: 4rem;
-      font-size: 4rem;
+      margin-top: 2rem;
+      font-size: 1.2rem;
       font-weight: 700;
+    }
+
+    input {
+      width: 100%;
+      margin: 0 auto;
+      height: 37px;
+      margin-top: 3%;
     }
   }
 
   .image-gallery {
-    // display: flex;
+    margin: 0 auto;
+    margin-left: -8%;
 
-    birthday {
-      justify-content: space-between;
+    .column {
+      margin-left: 45px;
+    }
+
+    .cakes {
+      margin-left: -8%;
+    }
+
+    .price,
+    .card-title {
+      font-size: 15px;
+      width: 150px;
     }
   }
 }
