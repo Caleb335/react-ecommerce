@@ -4,7 +4,7 @@ import { landingPageCakes } from '../../Data';
 import MenuItem from '../../components/MenuItem/MenuItem';
 
 const LandingPage = props => {
-  const { history, match } = props;
+  const { history } = props;
 
   return (
     <div className='landing'>
