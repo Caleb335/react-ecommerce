@@ -19,7 +19,7 @@ class ProductPage extends React.Component {
 
   render() {
     // destructuring state
-    const { searchField } = this.state
+    const { searchField } = this.state;
 
     return (
       <div className='product_page'>

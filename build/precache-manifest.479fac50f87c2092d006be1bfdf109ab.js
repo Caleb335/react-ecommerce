@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8da2431743351ddd44e348e98db7a2d3",
+    "revision": "434d64b58394d073965f183dbf5a2d62",
     "url": "/index.html"
   },
   {
-    "revision": "f52804e4d2a8439fece6",
-    "url": "/static/css/main.948274cc.chunk.css"
+    "revision": "e9bae214a7954f736ba7",
+    "url": "/static/css/main.6f244c46.chunk.css"
   },
   {
-    "revision": "21b33dc0fe3aa830c322",
-    "url": "/static/js/2.a3416180.chunk.js"
+    "revision": "c6872966d3513e112099",
+    "url": "/static/js/2.800c5278.chunk.js"
   },
   {
     "revision": "d0b13a04dd0dc4c851ad16fad1cc6f51",
-    "url": "/static/js/2.a3416180.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.800c5278.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f52804e4d2a8439fece6",
-    "url": "/static/js/main.f85d8724.chunk.js"
+    "revision": "e9bae214a7954f736ba7",
+    "url": "/static/js/main.ad361656.chunk.js"
   },
   {
     "revision": "969ec6062bb99b0b9815",
@@ -28,48 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/about-bg.304e1eb1.jpeg"
   },
   {
-    "revision": "0837e2e1e86f9413da61fafc5bfdb53c",
-    "url": "/static/media/birthday.0837e2e1.jpg"
-  },
-  {
-    "revision": "d9391742887cb6e2953536d1da22736e",
-    "url": "/static/media/birthday1.d9391742.jpg"
-  },
-  {
-    "revision": "a2f90c39ad91a2e0582e2c735b63ee18",
-    "url": "/static/media/birthday2.a2f90c39.jpg"
-  },
-  {
-    "revision": "9314cb57bd1aeadb63970feb02cb9ddf",
-    "url": "/static/media/birthday3.9314cb57.jpg"
-  },
-  {
-    "revision": "d31a28ffa27a20b12932d0fb553a14bf",
-    "url": "/static/media/birthday4.d31a28ff.jpg"
-  },
-  {
-    "revision": "a59e8e027642a0f0bb3645d4d2f81970",
-    "url": "/static/media/birthday5.a59e8e02.jpg"
-  },
-  {
-    "revision": "253d5185ad4ff615032ba3a6e31b3f37",
-    "url": "/static/media/cup.253d5185.jpg"
-  },
-  {
-    "revision": "6df13de4c366a1395789792ef64cb224",
-    "url": "/static/media/cup1.6df13de4.jpg"
-  },
-  {
-    "revision": "2390e268eab60bb4762cda22e51207ed",
-    "url": "/static/media/cup2.2390e268.jpg"
-  },
-  {
     "revision": "d35928e53da1582b113fb33d9d820fae",
     "url": "/static/media/cup3.d35928e5.jpg"
-  },
-  {
-    "revision": "210e4b5d071f5d5cc93673faccfe682a",
-    "url": "/static/media/cup4.210e4b5d.jpg"
   },
   {
     "revision": "676207ada3528acb1bcac0419f43af00",

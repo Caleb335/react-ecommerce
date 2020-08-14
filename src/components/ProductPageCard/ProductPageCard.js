@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductPageCard.scss';
-import '../../pages/product-page/style.scss'
+import '../../pages/product-page/style.scss';
 import { connect } from 'react-redux';
 import { addItem } from '../../Redux/Cart/CartActions';
 
