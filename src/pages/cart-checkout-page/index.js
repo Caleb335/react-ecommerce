@@ -82,7 +82,8 @@ const CartCheckoutPage = props => {
                       }}
                       className='flex-details'
                     >
-                      <span>CIROMA ADEKUNLE CHUKWUMA</span>
+                      <input style={{ fontSize: 16 }} placeholder='CIROMA ADEKUNLE CHUKWUMA' value={name.toUpperCase()} />
+                      {/* <span>CIROMA ADEKUNLE CHUKWUMA</span> */}
                       <span
                         style={{ width: 70, fontSize: 12, display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                       >06 / 24</span>
