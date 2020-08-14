@@ -1,36 +1,11 @@
 import React from 'react';
 import './style.scss';
-//Importing Images
-import birthday from '../../assets/img/cakes/birthday/birthday.jpg';
-import birthday1 from '../../assets/img/cakes/birthday/birthday1.jpg';
-import birthday2 from '../../assets/img/cakes/birthday/birthday2.jpg';
-import birthday3 from '../../assets/img/cakes/birthday/birthday3.jpg';
-import birthday4 from '../../assets/img/cakes/birthday/birthday4.jpg';
-import birthday5 from '../../assets/img/cakes/birthday/birthday5.jpg';
-
-import cup from '../../assets/img/cakes/cup/cup.jpg';
-import cup1 from '../../assets/img/cakes/cup/cup1.jpg';
-import cup2 from '../../assets/img/cakes/cup/cup2.jpg';
-import cup3 from '../../assets/img/cakes/cup/cup3.jpg';
-import cup4 from '../../assets/img/cakes/cup/cup4.jpg';
+import { birthdayCakes, weddingCakes, cupCakes, others } from '../../Data';
 
 const ProductPage = () => {
   return (
     <div className='product_page'>
-      <header>
-        <div>
-          <h1>Logo</h1>
-        </div>
-        <input type='text' placeholder='Search for a cake..' />
-        <div>
-          <li>Contacts</li>
-          <li>Help</li>
-        </div>
-      </header>
-
       <div className='banner'>
-        <img src='' alt='' />
-
         <div>
           <p>The Best Cakes in Every Category</p>
           <input type='text' placeholder='Search for a cake...' />
@@ -38,43 +13,120 @@ const ProductPage = () => {
       </div>
 
       <div className='image-gallery'>
-        <div className='birthday'>
-          <h2>Birthday</h2>
-          <img src={birthday} alt='' />
-          <img src={birthday1} alt='' />
-          <img src={birthday2} alt='' />
-          <img src={birthday3} alt='' />
-          <img src={birthday4} alt='' />
-          <img src={birthday5} alt='' />
+        <div className='row'>
+          <h2>Birthday Cakes</h2>
+
+          {/* instead of hard coding the UI of multiple cake cards you can use the
+           * javascript map method to represent the UI
+           * It saves you the stress of having to copy and paste on multiple lines
+           * therefore, making our code shorter and cleaner.
+           */}
+
+          {birthdayCakes.map(birthdayCake => {
+            return (
+              <div key={birthdayCake.id} birthdayCake={birthdayCake}>
+                <div className=' column col-lg-3 col-md-4 col-sm-6 shadow' style={{ borderRadius: '50%' }}>
+                  <div className='card text-center shadow-lg ' style={{ marginTop: '25px', marginBottom: '25px', borderRadius: '5%' }}>
+                    <div className='px-5 pt-5'>
+                      <img src={birthdayCake.imageUrl} className='card-img-top img-fluid' alt='birthday cake' />
+                    </div>
+                    <div className='card-body'>
+                      <h1 className='card-title'>{birthdayCake.name}</h1>
+                      <p className='price'>Amount: {birthdayCake.price}</p>
+                      <button href='#' class='btn btn-danger'>
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
+        {/* cup cakes section */}
         <div className='cupcakes'>
-          <img src={cup} alt='' />
-          <img src={cup1} alt='' />
-          <img src={cup2} alt='' />
-          <img src={cup3} alt='' />
-          <img src={cup4} alt='' />
+          <div className='row'>
+            <h2>Cup Cakes</h2>
+            {cupCakes.map(cupCake => {
+              return (
+                <div key={cupCake.id} cupCake={cupCake}>
+                  <div className=' column col-lg-3 col-md-4 col-sm-6' style={{ borderRadius: '50%' }}>
+                    <div className='card text-center shadow-lg ' style={{ marginTop: '25px', marginBottom: '25px', borderRadius: '5%' }}>
+                      <div className='px-5 pt-5'>
+                        <img src={cupCake.imageUrl} className='card-img-top img-fluid' alt='cup cakes' />
+                      </div>
+                      <div className='card-body'>
+                        <h1 className='card-title'>{cupCake.name}</h1>
+                        <p className='price'>Amount: {cupCake.price}</p>
+                        <button href='#' class='btn btn-danger'>
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        <div></div>
+        {/* wedding cakes section */}
+        <div className='cupcakes'>
+          <div className='row'>
+            <h2>Wedding Cakes</h2>
+            {weddingCakes.map(weddingCake => {
+              return (
+                <div key={weddingCake.id} weddingCake={weddingCake}>
+                  <div className=' column col-lg-3 col-md-4 col-sm-6' style={{ borderRadius: '50%' }}>
+                    <div className='card text-center shadow-lg ' style={{ marginTop: '25px', marginBottom: '25px', borderRadius: '5%' }}>
+                      <div className='px-5 pt-5'>
+                        <img src={weddingCake.imageUrl} className='card-img-top img-fluid' alt='cup cakes' />
+                      </div>
+                      <div className='card-body'>
+                        <h1 className='card-title'>{weddingCake.name}</h1>
+                        <p className='price'>Amount: {weddingCakes.price}</p>
+                        <button href='#' class='btn btn-danger'>
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* other types of cake */}
+          <div className='cupcakes'>
+            <div className='row'>
+              <h2>Other cakes</h2>
+              {others.map(otherTypes => {
+                return (
+                  <div key={otherTypes.id} otherTypes={otherTypes}>
+                    <div className=' column col-lg-3 col-md-4 col-sm-6' style={{ borderRadius: '50%' }}>
+                      <div className='card text-center shadow-lg ' style={{ marginTop: '25px', marginBottom: '25px', borderRadius: '5%' }}>
+                        <div className='px-5 pt-5'>
+                          <img src={otherTypes.imageUrl} className='card-img-top img-fluid' alt='cup cakes' />
+                        </div>
+                        <div className='card-body'>
+                          <h1 className='card-title'>{otherTypes.name}</h1>
+                          <p className='price'>Amount: {otherTypes.price}</p>
+                          <button href='#' class='btn btn-danger'>
+                            Add to cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default ProductPage;
-
-// {
-//   Images[0].map(image => (
-//     <img key={image.id} src={image.src} style={{
-//           width:'400px'
-//         }}/>
-//   ))
-// }
-// {
-//   Images[1].map(image => (
-//     <img key={image.id} src={image.src} style={{
-//           width:'400px'
-//         }}/>
-//   ))
-// }

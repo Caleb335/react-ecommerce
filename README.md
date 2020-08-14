@@ -1,16 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Ecommerce
+* A ReactJS web-based ecommerce store for cakes and pasteries
 
-## Available Scripts
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). I'd explain how you can navigate through the project below 👇
 
-In the project directory, you can run:
+## Development
 
-### `npm start`
+- Run `npm install` in your terminal to get all the dependencies of the project.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- To see this app locally on your machine run this in your terminal
+```npm 
+    npm start
+```
+it pops open your browser and loads the app at this address `localhost:3000`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- We've installed prettier as a dependency, run the following command to format your codes.
+```npm
+    npm run format
+```
+
+# Contributing...
+
+* The folder we'd be working on, is the ```src``` folder.
+
+- Fork and clone this repository [the forked version] onto your machine.
+```git 
+    git clone https://github.com/your-username/react-ecommerce.git
+``` 
+- Make this repository the upstream, so when there is any change you can pull from this reposiory to get the current state of the app.
+```git 
+    git remote add upstream https://github.com/Caleb335/react-ecommerce.git
+```
+- Then you can either choose to pull from any of the available branch.
+```git
+    git pull upstream master || git pull upstream [branch-name]
+```
+- Create a branch, your branch name should be something related to the feature you'd be working on i.e
+```git
+    git checkout -b [login-component]
+```
+- Make your changes and commit them in that branch.git
+```git 
+    git commit -m "your message"
+```
+- Push the changes to your current branch, then make a pull request.
+```git
+    git push origin HEAD || git push origin login-component
+```
+
+* # Other scripts
 
 ### `npm test`
 
@@ -37,32 +74,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* # Happy hacking!

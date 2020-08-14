@@ -1,5 +1,6 @@
 import React from 'react';
 import banner from '../../assets/img/td.jpg';
+import './style.scss';
 
 const ContactPage = () => {
   return (
@@ -17,16 +18,17 @@ const ContactPage = () => {
       >
         contact us
       </div>
-      <div style={{ display: 'flex' }}>
-        <aside style={{ width: '65%' }}>
-          <div>
-            <h1>Contact Form</h1>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <input style={{ border: '1px solid black' }} type='text' placeholder='Name *' />
-              <input style={{ border: '1px solid black' }} type='text' placeholder='Email *' />
-              <input style={{ border: '1px solid black' }} type='text' placeholder='Subject *' />
-              <textarea style={{ border: '1px solid black' }} rows='15' placeholder='Message *'></textarea>
+      <div className='contain'>
+        <aside className='containerBody'>
+          <div className='formContainer'>
+            <h1>Leave a Message</h1>
+            <div className='contactForm'>
+              <input className='inputField1' type='text' placeholder='Name *' />
+              <input className='inputField1' type='text' placeholder='Email *' />
+              <input className='inputField1' type='text' placeholder='Subject *' />
+              <textarea className='inputField2' rows='15' placeholder='Message *'></textarea>
               <button
+                className='submitButton'
                 onClick={event => {
                   event.preventDefault();
                 }}
@@ -36,8 +38,8 @@ const ContactPage = () => {
             </div>
           </div>
         </aside>
-        <main>
-          <div>
+        <main className='containerBody2'>
+          <div className='formContainer'>
             <h1>Contact Details</h1>
             <div>
               <h3>Address:</h3>

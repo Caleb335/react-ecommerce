@@ -1,5 +1,39 @@
+@import '../../variables.scss';
+
+.column {
+  float: left;
+  width: 25%;
+  margin-left: 20px;
+}
+
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.column button {
+  width: 140px;
+  height: 50px;
+  font-size: 14px;
+}
+
+.image-gallery {
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.image-gallery .column {
+  margin: 30px;
+}
+
+h1.card-title {
+  font-size: 20px;
+}
+
 .product_page {
   padding: 2em;
+  margin-top: 2%;
 }
 
 .banner {
@@ -45,7 +79,7 @@ img {
   }
 
   .image-gallery {
-    display: flex;
+    // display: flex;
 
     birthday {
       justify-content: space-between;

@@ -61,7 +61,7 @@ const CartCheckoutPage = props => {
             </div>
             <div>
             <span style={{ color: '#8d8f97' }}>Subtotal: </span>${cartTotalPrice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.00 <br/>
-            <span style={{ color: '#8d8f97' }}>Subtotal: </span>₦{amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.00 at a rate of ₦400 = $1
+            <span style={{ color: '#8d8f97' }}>Subtotal: </span>₦{(amount/100).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}.00 at a rate of ₦400 = $1
             </div>
           </div>
         </div>
