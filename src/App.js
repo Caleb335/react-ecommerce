@@ -13,6 +13,7 @@ import BirthdayCakePage from './pages/birthdaycake-page';
 import WeddingCakePage from './pages/weddingcake';
 import OtherCakePage from './pages/othercake';
 import CupCakePage from './pages/cupcakepage';
+import PasswordRecover from './pages/password-reset/index';
 
 //firebase
 import { auth, createUserProfile } from './firebase/utils';
@@ -64,6 +65,7 @@ class App extends Component {
           <Route exact path='/chocolate' component={OtherCakePage} />
           <Route exact path='/cupcakepage' component={CupCakePage} />
           <Route exact path='/cart' component={CartCheckoutPage} />
+          <Route exact path='/passwordreset' component={PasswordRecover} />
         </Switch>
         <Footer />
       </div>

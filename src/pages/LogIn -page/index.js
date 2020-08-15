@@ -60,6 +60,7 @@ class Login extends Component {
               onChange={this.handleChange}
               required
             />
+            <Link to='/passwordreset'> <small style={{ color: "red" }}> forgot password?</small></Link>
             <div className='btn-wrapper'>
               <Button type='submit' placeholder='Sign In' />
               <Button className='google' type='button' placeholder='Sign In with google' onClick={signInWithGoogle}>

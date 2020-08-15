@@ -1,0 +1,39 @@
+.reset {
+  margin: 50px auto;
+  min-width: 320px;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    input {
+    }
+
+    .reset-btn {
+      width: 200px;
+      background: orange;
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      border: 0;
+      height: 10vh;
+    }
+    a {
+      text-decoration: none;
+      margin: 10px 0;
+      text-transform: uppercase;
+      text-align: center;
+      &:focus {
+        color: orange;
+      }
+    }
+  }
+}
