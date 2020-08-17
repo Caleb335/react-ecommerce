@@ -31,7 +31,7 @@ const Header = ({ currentUser, cartQuantity }) => {
               <Link to='/about'>About Us</Link>
             </li>
             <li className='nav-item'>
-              <Link to='/contact'>Contact</Link>
+              <Link to='#contact'>Contact</Link>
             </li>
             <li className='nav-item'>
               <Link to='/products'>Products</Link>

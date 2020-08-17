@@ -267,10 +267,15 @@ img.product {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(#fff, 0.5), rgba(#fff, 0.5)), url(../../assets/img/hero/hero4.jpg);
+  background-image: linear-gradient(rgba(#fff, 0.6), rgba(#fff, 0.6 )), url(../../assets/img/hero/hero4.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
+  font-size: 25px;
+
+  .header-subtext {
+    font-size: 18px;
+  }
 
   // clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 
@@ -288,7 +293,7 @@ img.product {
   }
 
   @media only screen and (max-width: 500px) {
-    // font-size: 10px;
+    font-size: 20px;
     padding: 30px;
     height: 80vh;
   }

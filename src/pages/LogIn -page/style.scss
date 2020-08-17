@@ -46,3 +46,50 @@ a:focus {
   align-items: center;
   justify-content: space-around;
 }
+
+.Register {
+
+  .Register-form {
+    margin-top: -1%;
+    width: 600px;
+  
+    Form {
+      height: 100%;
+      width: 100%;
+      padding-bottom: 4%;
+    }
+  
+    Button {
+      border-radius: 5px;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .Register {
+      margin: 0 auto;
+    }
+
+    .Register-form {
+      width: 200%;
+      margin: 0 auto;
+    }
+
+
+    .form {
+      width: 200%;
+      padding-bottom: 10%;
+    }
+
+    .btn-wrapper {
+      display: block;
+    }
+
+    Button {
+      width: 100%;
+    }
+
+    .Register-image {
+      display: none;
+    }
+  }
+}

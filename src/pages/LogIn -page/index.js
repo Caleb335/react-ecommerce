@@ -6,6 +6,7 @@ import FormInput from '../../components/formInput/index';
 import Button from '../../components/button';
 import { auth, signInWithGoogle } from '../../firebase/utils';
 import g from '../../assets/img/hero/g.png';
+import Header from '../../components/header/header'
 class Login extends Component {
   state = {
     email: '',
@@ -36,6 +37,7 @@ class Login extends Component {
     const { email, password } = this.state;
     return (
       <div className='Register'>
+        <Header />
         <div className='Register-image'>
           <p>
             <em>"Happiness is cakes, cupcakes and more cakes" - Anon</em>
@@ -49,7 +51,7 @@ class Login extends Component {
               <Link to='/products'>Get In!</Link>
             </span>
           </p>
-          <Form onSubmit={this.handleSubmit}>
+          <Form onSubmit={this.handleSubmit} className="form">
             <FormInput type='email' placeholder='Email' label='Email' value={email} name='email' required onChange={this.handleChange} />
             <FormInput
               type='password'
@@ -60,11 +62,14 @@ class Login extends Component {
               onChange={this.handleChange}
               required
             />
-            <Link to='/passwordreset'> <small style={{ color: "red" }}> forgot password?</small></Link>
+            <Link to='/passwordreset'>
+              {' '}
+              <small style={{ color: 'red' }}> forgot password?</small>
+            </Link>
             <div className='btn-wrapper'>
               <Button type='submit' placeholder='Sign In' />
-              <Button className='google' type='button' placeholder='Sign In with google' onClick={signInWithGoogle}>
-                <img className='google-img' alt='' src={g} />
+              <Button className='google' type='button' placeholder='' onClick={signInWithGoogle}>
+              Signin with google<img className='google-img' alt='' src={g} />
               </Button>
             </div>
           </Form>

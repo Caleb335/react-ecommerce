@@ -7,8 +7,6 @@ import Register from './pages/register-page/index';
 import AboutUsPage from './pages/about-page/index';
 import ContactPage from './pages/contact-page/index';
 import CartCheckoutPage from './pages/cart-checkout-page';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
 import BirthdayCakePage from './pages/birthdaycake-page';
 import WeddingCakePage from './pages/weddingcake';
 import OtherCakePage from './pages/othercake';
@@ -52,7 +50,6 @@ class App extends Component {
     const { currentUser } = this.props;
     return (
       <div className='App'>
-        <Header />
         <Switch>
           <Route exact path='/' component={LandingPage} />
           <Route exact path='/products' component={ProductPage} />
@@ -67,7 +64,6 @@ class App extends Component {
           <Route exact path='/cart' component={CartCheckoutPage} />
           <Route exact path='/passwordreset' component={PasswordRecover} />
         </Switch>
-        <Footer />
       </div>
     );
   }
