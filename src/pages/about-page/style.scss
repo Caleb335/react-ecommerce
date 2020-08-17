@@ -14,8 +14,8 @@
   padding-top: 50px;
 
   @media only screen and (max-width: 576px) {
-      width: 100%;
-      margin-left: -50%;
+    width: 100%;
+    margin-left: -50%;
   }
 }
 
@@ -32,10 +32,10 @@
   zoom: 1.5;
 
   @media only screen and (max-width: 576px) {
-      margin-left: -50%;
+    margin-left: -50%;
 
-        display: none;
-  } 
+    display: none;
+  }
 }
 
 .about-intro div.para {

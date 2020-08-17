@@ -2,7 +2,7 @@ import React from 'react';
 import './style.scss';
 import { birthdayCakes, weddingCakes, cupCakes, others } from '../../Data';
 import ProductPageCard from '../../components/ProductPageCard/ProductPageCard';
-import Header from '../../components/header/header'
+import Header from '../../components/header/header';
 
 class ProductPage extends React.Component {
   constructor() {

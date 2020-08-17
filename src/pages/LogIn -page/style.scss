@@ -48,22 +48,21 @@ a:focus {
 }
 
 .Register {
-
   .Register-form {
     margin-top: -1%;
     width: 600px;
-  
+
     Form {
       height: 100%;
       width: 100%;
       padding-bottom: 4%;
     }
-  
+
     Button {
       border-radius: 5px;
     }
   }
-  
+
   @media only screen and (max-width: 576px) {
     .Register {
       margin: 0 auto;
@@ -73,7 +72,6 @@ a:focus {
       width: 200%;
       margin: 0 auto;
     }
-
 
     .form {
       width: 200%;

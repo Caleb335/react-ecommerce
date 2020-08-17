@@ -9,7 +9,7 @@ import staff1 from '../../assets/img/staff1.jpeg';
 import staff2 from '../../assets/img/staff2.jpeg';
 import staff3 from '../../assets/img/staff3.jpeg';
 
-const AboutUsPage = (props) => {
+const AboutUsPage = props => {
   return (
     <section id={props.id}>
       <div className='about-body'>

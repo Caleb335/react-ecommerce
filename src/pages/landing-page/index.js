@@ -2,10 +2,10 @@ import React from 'react';
 import './style.scss';
 import { landingPageCakes } from '../../Data';
 import MenuItem from '../../components/MenuItem/MenuItem';
-import Header from '../../components/header/header'
-import Footer from '../../components/footer/footer'
-import About from '../about-page/index'
-import Contact from '../contact-page/index'
+import Header from '../../components/header/header';
+import Footer from '../../components/footer/footer';
+import About from '../about-page/index';
+import Contact from '../contact-page/index';
 
 const LandingPage = props => {
   const { history } = props;
@@ -46,9 +46,9 @@ const LandingPage = props => {
           </div>
         </div>
       </div>
-      <About id="about"/>
-      <Contact id="contact"/>
-      <Footer id="footer"/>
+      <About id='about' />
+      <Contact id='contact' />
+      <Footer id='footer' />
     </div>
   );
 };

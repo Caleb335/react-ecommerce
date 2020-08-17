@@ -2,7 +2,7 @@ import React from 'react';
 import banner from '../../assets/img/td.jpg';
 import './style.scss';
 
-const ContactPage = (props) => {
+const ContactPage = props => {
   return (
     <section id={props.id}>
       <div
