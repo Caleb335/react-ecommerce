@@ -2,6 +2,7 @@ import React from 'react';
 import './style.scss';
 import { birthdayCakes, weddingCakes, cupCakes, others } from '../../Data';
 import ProductPageCard from '../../components/ProductPageCard/ProductPageCard';
+import Header from '../../components/header/header'
 
 class ProductPage extends React.Component {
   constructor() {
@@ -23,6 +24,7 @@ class ProductPage extends React.Component {
 
     return (
       <div className='product_page'>
+        <Header />
         <div className='banner'>
           <div>
             <p>The Best Cakes in Every Category</p>

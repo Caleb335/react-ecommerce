@@ -8,9 +8,10 @@ import other4 from '../../assets/img/other4.jpg';
 import staff1 from '../../assets/img/staff1.jpeg';
 import staff2 from '../../assets/img/staff2.jpeg';
 import staff3 from '../../assets/img/staff3.jpeg';
-const AboutUsPage = () => {
+
+const AboutUsPage = (props) => {
   return (
-    <div>
+    <section id={props.id}>
       <div className='about-body'>
         <div className='about-intro'>
           <div className='intro-img'>
@@ -72,7 +73,6 @@ const AboutUsPage = () => {
 
         <div className='latest-offer'>
           <div>
-            <h1>Foldables offer</h1>
             <h4>Our latest offer</h4>
             <p>
               Proident nulla cillum eu fugiat consequat commodo exercitation pariatur laboris do amet ad elit in. Dolore tempor elit excepteur sit
@@ -110,7 +110,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

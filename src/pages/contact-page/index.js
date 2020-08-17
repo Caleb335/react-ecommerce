@@ -2,9 +2,9 @@ import React from 'react';
 import banner from '../../assets/img/td.jpg';
 import './style.scss';
 
-const ContactPage = () => {
+const ContactPage = (props) => {
   return (
-    <div>
+    <section id={props.id}>
       <div
         style={{
           height: 250,
@@ -60,7 +60,7 @@ const ContactPage = () => {
           </div>
         </main>
       </div>
-    </div>
+    </section>
   );
 };
 
